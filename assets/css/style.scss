@@ -13,8 +13,25 @@
     border-radius: 4px;
 }
 
-nav {
+#header nav {
     background: none;
 }
 
 @import "{{ site.theme }}";
+
+#header nav ul {
+    text-align: center;
+}
+#header nav ul li {
+    margin: 4px;
+}
+
+#header nav ul li a {
+    background: #b0aea8;
+    border: none;
+    border-radius: 4px;
+}
+
+nav {
+    background: none;
+}
