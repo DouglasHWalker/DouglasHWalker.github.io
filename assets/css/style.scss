@@ -1,9 +1,20 @@
 ---
 ---
+#header nav ul {
+    text-align: center;
+}
+#header nav ul li {
+    margin: 4px;
+}
 
-.Downloads {
-    background-color: aqua;
-    color: black;
+#header nav ul li a {
+    background: #b0aea8;
+    border: none;
+    border-radius: 4px;
+}
+
+nav {
+    background: none;
 }
 
 @import "{{ site.theme }}";
