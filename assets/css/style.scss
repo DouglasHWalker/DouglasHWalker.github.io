@@ -7,9 +7,15 @@ nav {
 
 @import "{{ site.theme }}";
 
+#header nav {
+    background: none;
+    max-width: none;
+}
+
 #header nav ul {
     text-align: center;
 }
+
 #header nav ul li {
     margin: 4px;
     text-shadow: none;
@@ -24,6 +30,14 @@ nav {
     font-size: 16px;
 }
 
-#header nav {
+#header nav ul li a:hover {
     background: none;
+    background-color: none;
+    border: none;
+    box-shadow: none;
+    color: #ffcc00;
+}
+
+section #title {
+    margin: 0 0 20px 0;
 }
