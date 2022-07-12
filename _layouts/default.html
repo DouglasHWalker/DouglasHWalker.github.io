@@ -21,12 +21,12 @@
       <div id="header">
         <nav>
           <ul>
-            <li class="Downloads"><a href="../about.html">About</a></li>
-            <li class="Downloads"><a href="../experience.html">Work Experience</a></li>
-            <li class="Downloads"><a href="../education.html">Education and Honours</a></li>
-            <li class="Downloads"><a href="../projects.html">Projects</a></li>
-            <li class="Downloads"><a href="../blueprint.html">Blueprint</a></li>
-            <li class="Downloads"><a href="../fire.html">FIRE</a></li>
+              <li class="Downloads"><a href="../experience.html">About</a></li>
+              <li class="Downloads"><a href="../education.html">Experience</a></li>
+              <li class="Downloads"><a href="../projects.html">Contributions</a></li>
+              <li class="Downloads"><a href="../blueprint.html">Contact</a></li>
+              <!-- <li class="Downloads"><a href="../fire.html">FIRE</a></li>
+              <li class="Downloads"><a href="../about.html">About</a></li> -->
           </ul>
         </nav>
       </div><!-- end header -->
@@ -36,9 +36,10 @@
       <section>
         <div id="title">
           <h1><a href="../index.html">{{ site.title | default: site.github.repository_name }}</a></h1>
-          <p>{{ site.description | default: site.github.project_tagline }}</p>
+          <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+          <p>“Civilization advances by extending the number of important operations which we can perform without thinking about them.” A. N. Whitehead</p>
           <hr>
-          <span class="credits left">Project maintained by <a href="../index.html">{{ site.github.owner_name }}</a></span>
+          <!-- <span class="credits left">Project maintained by <a href="../index.html">{{ site.github.owner_name }}</a></span> -->
         </div>
 
         {{ content }}
