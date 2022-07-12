@@ -7,13 +7,21 @@ nav {
 
 @import "{{ site.theme }}";
 
+// Header
+#header {
+    position: absolute;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
 #header nav {
     background: none;
     max-width: none;
 }
 
 #header nav ul {
-    text-align: center;
+    text-align: right;
 }
 
 #header nav ul li {
@@ -38,8 +46,26 @@ nav {
     color: #ffcc00;
 }
 
+#header nav ul li #resume {
+    border: 2px solid #7DB5FD;
+    color: #7DB5FD;
+    border-radius: 4px;
+    box-shadow: none;
+    background: none; // #b0aea8;
+    background-color: none;
+    font-size: 16px;
+}
+
+// Title
 section #title {
-    margin: 0 0 20px 0;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 0px;
 }
 
 .wrapper {
@@ -49,6 +75,7 @@ section #title {
 section {
     max-width: none;
 }
+
 
 section #title h1 {
     font-size: 72px;
