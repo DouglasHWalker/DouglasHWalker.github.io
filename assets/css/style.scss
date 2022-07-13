@@ -40,6 +40,7 @@ nav {
     background: none; // #b0aea8;
     background-color: none;
     font-size: 16px;
+    padding: 16px 24px;
 }
 
 #header nav ul li a:hover {
@@ -124,7 +125,7 @@ section #title p {
     font-weight: lighter;
     font-size: 20px;
     text-align: left;
-    margin-top: 8px;
+    margin-top: 16px;
     // font-family: 'Charter', 'Times New Roman', Times, serif, serif;
     max-width: 700px;
 }
@@ -140,6 +141,7 @@ section #title p {
     box-shadow: none;
     background: none; // #b0aea8;
     background-color: none;
+    margin-top: 16px;
 }
 
 #contributions:hover {
@@ -170,7 +172,7 @@ li {
 
 body {
     font: 16px/1.5 Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;;
-    background: linear-gradient(#234, #1c1c1c);
+    background: radial-gradient(#234, #111);
 }
 
 section img {
@@ -197,7 +199,7 @@ svg {
     bottom: 40px;
 }
 
-#motivation {
+.content {
     justify-content: center;
     display: grid;
     margin: 0;

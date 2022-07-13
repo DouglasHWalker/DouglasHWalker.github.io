@@ -37,10 +37,10 @@
       </ul>
       <section>
         <div id="title">
-          <div>
+          <div style="margin-right: 80px;">
             <h1><a href="../index.html">{{ site.title | default: site.github.repository_name }}</a></h1>
             <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-            <p><span style="font-style: italic;">“Civilization advances by extending the number of important operations which we can perform without thinking about them.”</span> A. N. Whitehead</p>
+            <p><span style="margin-right: 32px;">“Civilization advances by extending the number of important operations which we can perform without thinking about them.”</span> A. N. Whitehead</p>
             <a id="contributions" href="../work.html">View my Contributions</a>
           </div>
           <canvas height="300" id="myCanvas" width="300"></canvas>
@@ -107,8 +107,8 @@
     var Phi2   = 2.3*(Math.PI)/2;
     var m1     = 4;
     var m2     = 8;
-    var l1     = 120* Math.random();
-    var l2     = 80* Math.random();
+    var l1     = Math.min(60, 120* Math.random());
+    var l2     = Math.min(60, 80* Math.random());
     var X0     = 150;
     var Y0     = 60;
     var g      = 9.8;
