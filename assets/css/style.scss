@@ -23,6 +23,7 @@ nav {
 #header nav ul {
     text-align: right;
     margin-top: 24px;
+    display: inline-block;
 }
 
 #header nav ul li {
@@ -111,7 +112,6 @@ section #title p {
     font-size: 20px;
     text-align: left;
     margin-top: 8px;
-    font-style: italic;
     // font-family: 'Charter', 'Times New Roman', Times, serif, serif;
     max-width: 700px;
 }
@@ -142,4 +142,15 @@ h2 {
 
 p {
     color: #b9b9b9;
+    margin: 0 0 16px;
+    max-width: 650px;
+}
+ul {
+    color: #d54511;
+    list-style-image: none;
+    display: inline-grid;
+}
+
+body {
+    font: 16px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
