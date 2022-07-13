@@ -33,14 +33,16 @@
     <div class="wrapper">
 
       <section>
+        <link href="extern.html" rel="import" style="float: right;" />
         <div id="title">
           <h1><a href="../index.html">{{ site.title | default: site.github.repository_name }}</a></h1>
           <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-          <p>“Civilization advances by extending the number of important operations which we can perform without thinking about them.” A. N. Whitehead</p>
+          <p><span style="font-style: italic;">“Civilization advances by extending the number of important operations which we can perform without thinking about them.”</span> A. N. Whitehead</p>
           <a id="contributions" href="../work.html">View my Contributions</a>
-          <hr>
+          
           <!-- <span class="credits left">Project maintained by <a href="../index.html">{{ site.github.owner_name }}</a></span> -->
         </div>
+        
 
         {{ content }}
 
