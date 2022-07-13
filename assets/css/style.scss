@@ -87,6 +87,20 @@ section {
     max-width: none;
 }
 
+section #title {
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: row;
+    align-items: center;
+    min-height: 90vh;
+    padding-top: 0px;
+}
+
+section #title:nth-child() {
+    padding-bottom: 16px;
+}
 
 section #title h1 {
     font-size: 72px;
@@ -145,6 +159,7 @@ p {
     color: #b9b9b9;
     margin: 0 0 16px;
     max-width: 650px;
+    text-align: justify;
 }
 ul {
     color: #d54511;
@@ -165,4 +180,20 @@ section img {
     border-radius: 8px;
     filter: grayscale(16%);
     float: right;
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+    fill: #f4f4f4;
+}
+
+#socials {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+    display: inline-block;
+    right: 40px;
+    position: fixed;
+    bottom: 40px;
 }
