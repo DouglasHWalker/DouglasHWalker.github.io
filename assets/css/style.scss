@@ -96,12 +96,12 @@ section #title {
     -webkit-box-align: center;
     flex-direction: row;
     align-items: center;
-    min-height: 90vh;
+    min-height: 100vh;
     padding-top: 0px;
 }
 
 section #title h1 {
-    font-size: 72px;
+    font-size: clamp(40px, 8vw, 80px);
     line-height: 72px;
     text-align: left;
     font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;;
@@ -114,7 +114,7 @@ section #title h1 a {
 section #title h2 {
     color: #d54511;
     font-weight: lighter;
-    font-size: 40px;
+    font-size: clamp(20px, 6vw, 40px);
     line-height: 40px;
     text-align: left;
     margin-top: 24px;
@@ -124,7 +124,7 @@ section #title h2 {
 section #title p {
     color: #dcdcdc;
     font-weight: lighter;
-    font-size: 20px;
+    font-size: clamp(16px, 3vw, 20px);
     text-align: left;
     margin-top: 16px;
     // font-family: 'Charter', 'Times New Roman', Times, serif, serif;
@@ -208,3 +208,18 @@ svg:hover {
     display: grid;
     margin: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+    section #title h1 {
+        margin: 0;
+    }
+    section #title {
+        flex-direction: column;
+    }
+    #header nav ul li a {
+        padding: 8px 12px;
+    }
+  }
