@@ -1,0 +1,196 @@
+body {
+  font-size: 18px;
+  background: #1e1e1e;
+  font: 16px/1.5 Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+  color: #efeff0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 16px;
+  font: 16px/1.5 Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;;
+  font-size: 1.5em;
+  background-color: #1e1e1e;
+  color: gold;
+  border: 1px gold solid;
+  border-radius: 16px;
+  cursor: pointer;
+  max-width: 200px;
+}
+
+.call-to-action-link {
+  padding: 16px;
+  font-size: 1.5em;
+  color:skyblue;
+  border: 2px skyblue solid;
+  border-radius: 16px;
+  margin-top: 16px;
+  max-width: 200px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.call-to-action-link:hover {
+  color: #1e1e1e;
+  border: 2px solid #1e1e1e;
+  background: skyblue;
+  transition: 0.8s;
+}
+
+.title {
+  height: 100vh;
+  display: inline-grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.hero-name {
+  color:gold;
+  font-size: clamp(0.8em, 4vw, 1.6em);
+  font-family: 'Consolas', 'Courier New', Courier, monospace;
+  font-weight: bold;
+  margin: 0 0 16px 0px;
+}
+
+.tagline {
+  font-size: clamp(2em, 10vw, 5em);
+  line-height: clamp(1em, 10vw, 1.1em);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0 0 0px 0px;
+}
+
+.intro {
+  font-size: clamp(0.8em, 4vw, 1.6em);
+  font-family:'Segoe UI', Geneva, Tahoma, Verdana, sans-serif;
+  font-stretch: expanded;
+  max-width: 60vw;
+}
+
+.scroll-prompt {
+  color: gold;
+  /* transform: rotate(90deg); */
+  max-width: fit-content;
+  margin-top: 80px;;
+}
+
+.headshot {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  padding: 0;
+}
+
+.headshot:hover{
+  color: gold;
+  transition: 0s;
+}
+
+.headshot img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 8px 0 0;
+  padding: 0;
+}
+
+.highlight {
+  color: gold;
+  padding-right: 8px;
+}
+
+h3, h4 {
+  margin-bottom: 0;
+}
+
+nav {
+  /* border-bottom: 2px solid #2f2f2f; */
+  background: #1e1e1e;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 65vw;
+  padding: 3.125rem 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #efeff0;
+  font-weight: bold;
+  padding: 24px;
+}
+
+nav a:hover {
+  color: red;
+  transition: 0.8s;
+}
+
+#page-body {
+  width: 65vw;
+  margin: auto;
+}
+
+.article-list-item {
+  text-decoration: none;
+  color: black;
+  padding: 16px 0 0 0;
+}
+
+.article-list-item p {
+  padding-bottom: 32px;
+  border-bottom: 2px solid black;
+}
+
+#add-comment-form {
+  border-bottom: 2px solid black;
+  padding: 16px;
+}
+
+#add-comment-form h3 {
+  margin-bottom: 16px;
+}
+
+#add-comment-form input, textarea {
+  display: block;
+  width: 300px;
+  padding: 8px;
+  border-radius: 8px;
+  font: 16px/1.5 Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;;
+  font-size: 18px;
+  border: 2px solid black;
+  margin-bottom: 16px;
+}
+
+#add-comment-form button {
+  width: 320px;
+}
+
+#upvotes-section button, p {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.comment {
+  border-bottom: 2px solid black;
+  padding: 16px;
+}
