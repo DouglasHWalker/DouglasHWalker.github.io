@@ -21,11 +21,14 @@
       <div id="header">
         <nav>
           <ul>
-              <li class="Downloads"><a href="#">About</a></li>
-              <li class="Downloads"><a href="#">Experience</a></li>
-              <li class="Downloads"><a href="#">Contributions</a></li>
-              <li class="Downloads"><a href="#">Contact</a></li>
-              <li class="Downloads"><a id="resume" href="#">Résumé</a></li>
+            <li id="headshot" ><img width="24px" src="./Images/Headshot.png"/></li>
+          </ul>
+          <ul>
+              <li class="Downloads"><a href="#">01 Home</a></li>
+              <li class="Downloads"><a href="#">02 Experience</a></li>
+              <li class="Downloads"><a href="#">03 Work</a></li>
+              <li class="Downloads"><a href="#">04 Contact</a></li>
+              <li class="Downloads"><a id="resume" href="#">Resume</a></li>
           </ul>
         </nav>
       </div><!-- end header -->
@@ -40,7 +43,7 @@
           <div style="margin-right: 80px;">
             <h1><a href="../index.html">{{ site.title | default: site.github.repository_name }}</a></h1>
             <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-            <p>I'm a software engineer and general automator with a passion for solving complex problems. Recently, I've been working on optimising humantarian crisis response for the Defense Science and Technology Group in Adelaide, Australia.</p>
+            <p>I'm a full-stack engineer and general automator with a passion for solving difficult problems. Recently, I have been helping to optimise humanitarian crisis response for the Defence Science and Technology Group.</p>
             <!-- <p>I'm a full-stack software engineer and general automator with a passion for solving complex problems with innovative technology. I've recently worked on optimising humantarian crisis response for the Defense Science and Technology Group.</p> -->
             <!-- <p><span style="margin-right: 32px;">“Civilization advances by extending the number of important operations which we can perform without thinking about them.”</span> A. N. Whitehead</p> -->
             <a id="contributions" href="../work.html">Take a look!</a>
@@ -116,7 +119,7 @@
     var l2     = 80;
     var X0     = 200;
     var Y0     = 60;
-    var g      = 9.8;
+    var g      = 9.8*1.5;
     var time   = 0.16;
     var canvas  = document.getElementById('myCanvas');
     var context = canvas.getContext('2d');
