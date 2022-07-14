@@ -82,7 +82,7 @@ section #title {
 }
 
 .wrapper {
-    max-width: 80%;
+    max-width: 65%;
 }
 
 section {
@@ -173,7 +173,7 @@ li {
 
 body {
     font: 16px/1.5 Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;;
-    background: radial-gradient(#234, #111);
+    background: #0e141c;
 }
 
 section img {
@@ -209,11 +209,14 @@ svg:hover {
     margin: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     body {
         background-color: lightblue;
     }
     section #title h1 {
+        margin: 0;
+    }
+    section #title h2 {
         margin: 0;
     }
     section #title {
@@ -221,5 +224,9 @@ svg:hover {
     }
     #header nav ul li a {
         padding: 8px 12px;
+    }
+    .wrapper{
+        max-width: 90%;
+        padding: 16px;
     }
   }
