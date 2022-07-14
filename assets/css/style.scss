@@ -7,6 +7,10 @@ nav {
 
 @import "{{ site.theme }}";
 
+* {
+    transition: 1.2s;
+}
+
 // Header
 #header {
     position: absolute;
@@ -82,7 +86,7 @@ section #title {
 }
 
 .wrapper {
-    max-width: 100%;
+    max-width: 65%;
 }
 
 section {
@@ -174,7 +178,6 @@ li {
 body {
     font: 16px/1.5 Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;;
     background: #0e141c;
-    max-width: 65%;
 }
 
 section img {
