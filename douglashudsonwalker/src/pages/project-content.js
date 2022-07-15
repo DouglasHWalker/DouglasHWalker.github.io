@@ -13,7 +13,9 @@ const projects = [
             'Cras maximus tincidunt lacus, in gravida magna auctor a.Suspendisse aliquam, augue in efficitur rhoncus, orci mi auctor magna, in venenatis quam ante eget ex.',
             'Ut hendrerit purus ac tortor vestibulum, facilisis pharetra felis ultricies.Sed sit amet nulla condimentum, ultricies erat vitae, semper ex.',
             'Morbi rutrum laoreet purus, vitae venenatis est efficitur eu.Pellentesque pharetra bibendum rhoncus.Sed tempus dignissim elementum.'
-        ]
+        ],
+        image: require("../images/predictions.png"),
+        technologies: ["C++", "React Native", "Node.js", "Python", "Swift"]
     },
     {
         name: 'lifetime',
@@ -29,7 +31,9 @@ const projects = [
             'Cras maximus tincidunt lacus, in gravida magna auctor a.Suspendisse aliquam, augue in efficitur rhoncus, orci mi auctor magna, in venenatis quam ante eget ex.',
             'Ut hendrerit purus ac tortor vestibulum, facilisis pharetra felis ultricies.Sed sit amet nulla condimentum, ultricies erat vitae, semper ex.',
             'Morbi rutrum laoreet purus, vitae venenatis est efficitur eu.Pellentesque pharetra bibendum rhoncus.Sed tempus dignissim elementum.'
-        ]
+        ],
+        image: require("../images/Dalle.jpeg"),
+        technologies: ["C++", "React Native", "Node.js", "Python", "Swift"]
     },
     {
         name: 'bankstudios',
@@ -45,7 +49,9 @@ const projects = [
             'Cras maximus tincidunt lacus, in gravida magna auctor a.Suspendisse aliquam, augue in efficitur rhoncus, orci mi auctor magna, in venenatis quam ante eget ex.',
             'Ut hendrerit purus ac tortor vestibulum, facilisis pharetra felis ultricies.Sed sit amet nulla condimentum, ultricies erat vitae, semper ex.',
             'Morbi rutrum laoreet purus, vitae venenatis est efficitur eu.Pellentesque pharetra bibendum rhoncus.Sed tempus dignissim elementum.'
-        ]
+        ],
+        image: require("../images/jodia.png"),
+        technologies: ["C++", "React Native", "Node.js", "Python", "Swift"]
     },
 ];
 

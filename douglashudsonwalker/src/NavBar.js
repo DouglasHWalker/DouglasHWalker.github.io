@@ -5,7 +5,8 @@ import headshot from './images/Headshot.png'
 const NavBar = () => (
     <nav>
         <ul className="headshot-container">
-            <li ><Link className="headshot" to="/"><img src={headshot} alt="Headshot" />Douglas Hudson Walker</Link></li>
+            <li ><Link className="headshot" to="/"><img src={headshot} alt="Headshot" />
+                <p>Douglas Hudson Walker</p></Link></li>
         </ul>
         <ul>
             <li><Link to="/about"><span className="highlight">01</span> About</Link></li>
