@@ -59,8 +59,8 @@ button {
 }
 
 .tagline {
-  font-size: clamp(2em, 10vw, 6em);
-  line-height: clamp(1em, 10vw, 1.1em);
+  font-size: clamp(2em, 4em, 6em);
+  line-height: clamp(1em, 4em, 1.1em);
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
   font-weight:400;
   margin: 0 0 0px 0px;
@@ -68,10 +68,10 @@ button {
 }
 
 .intro {
-  font-size: clamp(1em, 3vw, 1.8em);
+  font-size: clamp(1em, 1.6em, 1.6em);
   font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
   max-width: 80%;
-  margin-top: 40px;
+  margin-top: 16px;
 }
 
 .scroll-prompt {
@@ -105,11 +105,25 @@ button {
 
 .headshot p {
   padding: 0;
+  font-weight: bold;
 }
 
 .highlight {
   color: gold;
   padding-right: 8px;
+}
+
+.about-tech {
+  display: inline-flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-tech li {
+  color: gold;
+  padding-right: 16px;
 }
 
 .featured h2 {
@@ -223,10 +237,15 @@ nav {
   display: flex;
   justify-content: space-between;
   position: fixed;
+  font-weight: lighter;
   top: 0;
-  width: 50vw;
+  width: 60vw;
   padding: 3.125rem 0;
   z-index: 10;
+  opacity: 0;
+  animation: 0.8s ease-out 1s 1 appear;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 
 nav ul {
@@ -255,7 +274,7 @@ nav a:hover {
 }
 
 #page-body {
-  max-width: 50vw;
+  max-width: 60vw;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -298,12 +317,19 @@ nav a:hover {
 
 .down-arrow {
   position: absolute;
-  top: calc(100vh - 80px);
+  top: calc(100vh - 120px);
   left: calc(50% - 14px);
   width: 0;
   height: 30px;
   border: 2px solid;
   border-radius: 2px;
+}
+
+.down-arrow p {
+  position: absolute;
+  top: -50px;
+  left: -55px;
+  width: 150px;
 }
 
 .down-arrow:after {
@@ -324,7 +350,7 @@ nav a:hover {
     opacity: 0;
   }
   100% {
-    opacity: 0.8;
+    opacity: 1;
   }
 }
 
@@ -354,9 +380,28 @@ nav a:hover {
 .down-arrow {
   animation: 0.8s ease-out 1s 1 appear, jumpInfinite 1.5s infinite;
   animation-delay: 4s;
+  animation-fill-mode: forwards; 
   opacity: 0;
   z-index: 0;
-  animation-fill-mode: forwards; 
+}
+
+.about {
+  max-width: 40vw;
+  margin-bottom: 120px;
+}
+
+.about h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.about p {
+  margin: 0 0 16px 0;
+}
+
+.about-headshot{
+  max-width: 200px;
+  float: right;
 }
 
 @media only screen and (max-width: 900px)  {
@@ -422,8 +467,8 @@ nav a:hover {
 
 .tech {
   display: inline-flex;
-  padding-top: 16px;
   flex-wrap: wrap;
+  padding-top: 16px;
 }
 
 .tech p {
