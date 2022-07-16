@@ -7,14 +7,14 @@ const AboutPage = () => (
             <div className='about'>
                 <h1>About Me</h1>
                 <p>
-                    I’m a full-stack engineer with a dream of using cutting-edge technology to solve the world’s most challenging problems. I enjoy contributing to solutions at every level of abstraction, bridging my insights into each stage of development. 
+                    I’m a full-stack engineer with a dream of using cutting-edge technology to solve the world’s most challenging problems. I enjoy contributing to solutions at every level of abstraction, bridging my insights from each into every stage of development. 
                 </p>
                 <p>
                     So far I’ve helped to optimise humanitarian crisis response, build financial algorithms, decipher news veracity, predict Premier League results, and personalise online education for individuals. By building practical software tools with high usability, we can extend humanity’s capabilities and transform the world for the better!
                     
                 </p>
                 <p>
-                    I have a breadth of experience using native and cross-platform development stacks. I have delivered solutions using many innovative technologies, including machine learning, augmented reality, the Internet of Things, and Big Data. Here are some of my favourite technologies to work with:
+                    I have a breadth of experience using cross-platform and native development stacks. I have delivered many solutions using innovative technologies, including machine learning, augmented reality, the Internet of Things, and Big Data. Here are some of my favourite technologies to work with:
                 </p>
                 <ul className='about-tech' >
                     <li>C++</li>
