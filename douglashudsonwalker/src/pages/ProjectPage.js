@@ -14,12 +14,15 @@ const ProjectPage = (props) => {
 
     return (
         <>
-            <h1>{project.title}</h1>
-            {project.content.map((paragraph, key) => (
-                <p key={key}>{paragraph}</p>
-            ))}
-            <h3>Other Articles:</h3>
-            <ProjectsList projects={otherProjects} />
+            <div style={{marginTop: "150px"}}>
+                <h1>{project.title}</h1>
+                {project.content.map((paragraph, key) => (
+                    <p key={key}>{paragraph}</p>
+                ))}
+                <img src={project.image} />
+                <h3>Other Articles:</h3>
+                <ProjectsList projects={otherProjects} />
+            </div>
         </>
     );
 }
