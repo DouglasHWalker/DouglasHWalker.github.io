@@ -1,11 +1,11 @@
 import React from 'react';
 import headshot from '../images/Headshot.png'
 
-const AboutPage = () => (
+const ExperiencePage = () => (
     <>
         <div className='about-container'>
             <div className='about'>
-                <h1>About Me</h1>
+                <h1>Experiences </h1>
                 <p>
                     I’m a full-stack engineer with a single purpose. To work on the world’s most challenging problems. I believe that building practical software tools, with high usability, can extend humanity’s capabilities and transform the world for the better!
                 </p>
@@ -55,4 +55,4 @@ const AboutPage = () => (
     </>
 );
 
-export default AboutPage;
+export default ExperiencePage;

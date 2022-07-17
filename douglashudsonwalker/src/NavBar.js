@@ -2,13 +2,14 @@ import React from "react";
 
 import headshot from './images/Headshot.png';
 import { Link, animateScroll as scroll } from "react-scroll";
+import { Link as RLink}  from "react-router-dom";
 
 const NavBar = () => {
     return (
         <nav>
             <ul className="headshot-container">
-                <li ><Link className="headshot" to="/"><img src={headshot} alt="Headshot" />
-                    <p>Douglas Hudson Walker</p></Link></li>
+                <li ><RLink className="headshot" to="/"><img src={headshot} alt="Headshot" />
+                    <p>Douglas Hudson Walker</p></RLink></li>
             </ul>
             <ul>
                 <li><Link activeClass="active" to="about" spy={true} smooth={true} offset={-100} duration={1200}>

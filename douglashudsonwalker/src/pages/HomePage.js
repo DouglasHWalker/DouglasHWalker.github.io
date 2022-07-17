@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectList from '../components/ProjectList'
 import AboutPage from './AboutPage';
+import ExperiencePage from './ExperiencePage';
 import projectContent from './project-content'
 
 const HomePage = () => {
@@ -15,6 +16,8 @@ const HomePage = () => {
             </div>
             <p className='quote'>"Civilization advances by extending the number of important operations which we can perform without thinking about them." - <span style={{ fontWeight: "bold" }}>Alfred North Whitehead.</span></p>
             <AboutPage id="about" />
+            <p className='quote'>"Civilization advances by extending the number of important operations which we can perform without thinking about them." - <span style={{ fontWeight: "bold" }}>Alfred North Whitehead.</span></p>
+            <ExperiencePage id="experience" />
             <div className='featured' id='projects'>
                 <h2 className='highlight'>Featured Projects</h2>
                 <ProjectList projects={projectContent} />
