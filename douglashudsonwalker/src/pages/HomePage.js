@@ -14,12 +14,12 @@ const HomePage = () => {
                 {/* <Link className='call-to-action-link' to="/about">See my Work!</Link> */}
                 <div className="down-arrow"><p>Scroll for more.</p></div>
             </div>
-            <p className='quote'>“Homo sapiens, “knowing man,” is the species that uses information to resist the rot of entropy and the burdens of evolution." - <span style={{ fontWeight: "bold" }}>Steven Pinker.</span></p>
+            <p className='quote' >"Civilization advances by extending the number of important operations which we can perform without thinking about them." - <span style={{ fontWeight: "bold" }}>Alfred North Whitehead.</span></p>
             <AboutPage id="about" />
             <ExperiencePage id="experience" />
-            <p className='quote' style={{marginTop: "0px"}}>"Civilization advances by extending the number of important operations which we can perform without thinking about them." - <span style={{ fontWeight: "bold" }}>Alfred North Whitehead.</span></p>
-            {/* <p className='quote' style={{marginTop: "0px"}}>“There can be no question of which was the greatest era for culture; the answer has to be today, until it is superseded by tomorrow.” - <span style={{ fontWeight: "bold" }}>Steven Pinker.</span></p>
-            <p className='quote' style={{marginTop: "0px"}}>“Fiction is empathy technology." - <span style={{ fontWeight: "bold" }}>Steven Pinker.</span></p> */}
+            {/* <p className='quote' style={{marginTop: "0px"}}>“There can be no question of which was the greatest era for culture; the answer has to be today, until it is superseded by tomorrow.” - <span style={{ fontWeight: "bold" }}>Steven Pinker.</span></p> */}
+            <p className='quote' style={{marginTop: "0px"}}>“Fiction is empathy technology." - <span style={{ fontWeight: "bold" }}>Steven Pinker.</span></p> */
+            {/* <p className='quote' style={{marginTop: "0px"}}>“Homo sapiens, “knowing man,” is the species that uses information to resist the rot of entropy and the burdens of evolution." - <span style={{ fontWeight: "bold" }}>Steven Pinker.</span></p> */}
             <div className='featured' id='projects'>
                 <h2 className='highlight'>Featured Projects</h2>
                 <ProjectList projects={projectContent} />
