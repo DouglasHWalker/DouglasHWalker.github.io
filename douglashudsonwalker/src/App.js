@@ -7,6 +7,7 @@ import ProjectsListPage from "./pages/ProjectsListPage";
 import ProjectPage from "./pages/ProjectPage";
 import NavBar from "./NavBar";
 import NotFoundPage from "./pages/NotFoundPage";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
+      {/* <Footer /> */}
     </Router>
   );
 }

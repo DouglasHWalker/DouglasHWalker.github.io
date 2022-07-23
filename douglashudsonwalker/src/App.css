@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --display-sans-font: -apple-system, "Source Sans Pro",  BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --main-sans-font: "Source Sans Pro", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --display-sans-font: "Noto Sans", -apple-system, "Source Sans Pro",  BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --main-sans-font: "Noto Sans",  "Source Sans Pro", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --accent-color: gold;
+  --background-color: #1e1e1e;
+  --foreground-color: #efeff0;
 }
 
 body {
   font-size: 18px;
-  background: #1e1e1e;
+  background: var(--background-color);
   /* font-size: 16px/1.5; */
   font-family: var(--main-sans-font);
-  color: #efeff0;
+  color: var(--foreground-color);
 }
 
 #root {
@@ -19,16 +23,14 @@ body {
 }
 
 button {
-  padding: 16px;
-  font: 16px/1.5;
+  padding: 16px 24px;
+  font-size: 1em;
   font-family: var(--display-sans-font);
-  font-size: 1.5em;
-  background-color: #1e1e1e;
-  color: gold;
-  border: 1px gold solid;
-  border-radius: 16px;
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  border: 2px var(--accent-color) solid;
+  border-radius: 8px;
   cursor: pointer;
-  max-width: 200px;
 }
 
 .call-to-action-link {
@@ -45,8 +47,8 @@ button {
 }
 
 .call-to-action-link:hover {
-  color: #1e1e1e;
-  border: 2px solid #1e1e1e;
+  color: var(--background-color);
+  border: 2px solid var(--background-color);
   background: skyblue;
   transition: 0.8s;
 }
@@ -82,7 +84,7 @@ button {
 }
 
 .scroll-prompt {
-  color: gold;
+  color: var(--accent-color);
   /* transform: rotate(90deg); */
   max-width: fit-content;
   margin-top: 80px;
@@ -97,7 +99,7 @@ button {
 }
 
 .headshot:hover{
-  color: gold;
+  color: var(--accent-color);
   transition: 0s;
 }
 
@@ -117,7 +119,7 @@ button {
 }
 
 .highlight {
-  color: gold;
+  color: var(--accent-color);
   padding-right: 8px;
 }
 
@@ -130,14 +132,14 @@ button {
 }
 
 .about-tech li {
-  color: gold;
+  color: var(--accent-color);
   padding-right: 16px;
 }
 
 .featured h2 {
   font-family: var(--main-sans-font);
   font-weight: 500;
-  color: #efeff0;
+  color: var(--foreground-color);
   font-size: clamp(1.5em, 4vw, 2em);
 }
 
@@ -196,7 +198,7 @@ button {
 
 .list_item_content h3 {
   padding-bottom: 16px;
-  border-bottom: 1px solid gold;
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .list_item_content p {
@@ -206,12 +208,12 @@ button {
 .tech {
   display: inline-flex;
   padding-top: 16px;
-
+  flex-wrap: wrap;
 }
 
 .tech p {
   padding-right: 16px;
-  color: gold;
+  color: var(--accent-color);
   margin: 0;
 }
 
@@ -239,7 +241,7 @@ button {
   display: flex;
   justify-content: start;
   text-decoration: none;
-  color: #efeff0;
+  color: var(--foreground-color);
 }
 
 h3, h4 {
@@ -248,7 +250,7 @@ h3, h4 {
 
 nav {
   /* border-bottom: 2px solid #2f2f2f; */
-  background: #1e1e1e;
+  background: var(--background-color);
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -282,13 +284,13 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #efeff0;
+  color: var(--foreground-color);
   font-weight: 500;
   padding: 24px;
 }
 
 nav a:hover {
-  color: gold;
+  color: var(--accent-color);
   transition: 0.8s;
 }
 
@@ -374,6 +376,15 @@ nav a:hover {
   }
 }
 
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @keyframes jumpInfinite {
   0% {
     margin-top: 0;
@@ -401,7 +412,7 @@ nav a:hover {
   padding: 16px;
   padding-left: 32px;
   padding-right: 0;
-  border-left: solid 2px gold;
+  border-left: solid 2px var(--accent-color);
   font-size: 1.3em;
   text-align: left;
   max-width: 800px;
@@ -438,7 +449,7 @@ nav a:hover {
 
 .about p {
   margin: 0 0 16px 0;
-  font-size: 1.05em;
+  line-height: 32px;
   /* text-align: justify; */
 }
 
@@ -470,7 +481,7 @@ nav a:hover {
   width: 200px;
   height: 200px;
   margin: 66px 0 0 50px;
-  border: 2px solid gold;
+  border: 2px solid var(--accent-color);
   content: '';
   z-index: -1;
   border-radius: 16px;
@@ -483,6 +494,10 @@ nav a:hover {
 
 .image-container:hover .about-headshot {
   transform: translate(8px, 8px);
+}
+
+.experiences {
+  
 }
 
 @media only screen and (max-width: 1100px)  {
@@ -554,7 +569,7 @@ nav {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  color: #efeff0;
+  color: var(--foreground-color);
   grid-column-start: 1;
   grid-column-end: -1;
   grid-row-start: 1;
@@ -588,7 +603,7 @@ nav {
 
 .tech p {
   padding-right: 16px;
-  color: gold;
+  color: var(--accent-color);
   margin: 0;
 }
 
@@ -634,4 +649,132 @@ nav {
   margin: 50px 0px;
 }
 
+}
+
+.experienceTabs {
+  margin: 32px 0px;
+  display: flex;
+  min-height: 400px;
+}
+
+.tabs {
+  display: inline-grid;
+  justify-content: space-between;
+  min-width: fit-content;
+  max-height: fit-content;
+}
+
+.tabs button {
+  border: none;
+  color: var(--foreground-color);
+  cursor: pointer;
+  padding: 16px 24px;
+  width: 100%;
+  background: var(--background-color);
+  transition: all 0.8s ease-out;
+  border-radius: 0;
+  border-left: 2px solid var(--background-color);
+}
+
+.tabs button:hover {
+  color: var(--accent-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tabs button:disabled {
+  color: var(--accent-color);
+  border-left: 2px solid var(--accent-color);
+}
+
+.tab-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-title h4 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.tab-date {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: white;
+}
+
+.content {
+  padding: 0px 16px;
+  line-height: 30px;
+}
+
+button, .content {
+  font-size: medium;
+}
+
+.tab-company {
+  font-weight: 600;
+  padding-bottom: 16px;
+  opacity: 0.7;
+}
+
+.tab-content {
+  margin:0;
+  list-style-type: none;
+}
+
+.tab-content li::before {
+  content: "\666";  
+  color: var(--accent-color); 
+  font-weight: 900;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1.5em;
+}
+
+@media only screen and (max-width: 960px) {
+
+  .experienceTabs .container {
+      width: 100%;
+  }
+
+  .experienceTabs .content {
+      padding: 50px;
+  }
+}
+
+footer {
+  background: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: fixed;
+  font-weight: lighter;
+  bottom: 0;
+  width: 40vw;
+  min-width: 1000px;
+  padding: 3.125rem 0;
+  z-index: 10;
+  font-family: var(--display-sans-font);
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer li {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--foreground-color);
+  font-weight: 500;
+  padding: 24px;
+}
+
+footer a:hover {
+  color: var(--accent-color);
+  transition: 0.8s;
 }

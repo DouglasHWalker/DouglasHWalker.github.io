@@ -9,7 +9,7 @@ const ProjectList = ({projects}) => (
                 
                 <div className="list_item_content">
                     <h3>{project.title}</h3>
-                    <p>{project.content[0].substring(0, 150)}...</p>
+                    <p>{project.summary}</p>
                     <div className="tech">
                         {project.technologies.map((tech, key) => (
                             <p>{tech}</p>
