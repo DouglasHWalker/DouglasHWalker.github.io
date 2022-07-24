@@ -7,13 +7,13 @@ const AboutPage = () => (
             <div className='about'>
                 <h1>About Me</h1>
                 <p>
-                    It took some time to appreciate this, but the experience I value most is learning. I’m a highly open individual, interested in many domains. That is why I find so much value in learning STEM and programming, because it opens the doors to working in virtually any industry. My ideal role would have me involved in every phase of development. In the past, I have enjoyed contributing to both front and back-end development, designing and architecting solutions, and influencing project direction and ideation.
+                    My name is Douglas and I'm a problem solver. I've dedicated myself to learning, and to building software solutions. My ideal role would involve working on the world's most challenging problems. I believe that by building practical tools, with high usability, we can extend humanity’s capabilities and transform the world for the better!
                 </p>
                 <p>
-                    I’d like to work on the world’s most challenging problems. I believe that building practical software tools, with high usability, can extend humanity’s capabilities and transform the world for the better! So far, I’ve helped to optimise humanitarian crisis response, build financial algorithms, decipher news veracity, and personalise online education for individuals.
+                    So far, I’ve helped to <span className='highlight'>optimise humanitarian crisis response, decipher news veracity, automate financial planning, and personalise online education</span>. I've also worked on <span className='highlight'>digital transformation</span> for many fortune 500 companies and performed <span className='highlight'>research and development</span> tasks with Australian universities, government, and defense.
                 </p>
                 <p>
-                    I love working with innovative technology. By using the latest tools, we can achieve solutions that would be otherwise unattainable. I’ve worked with machine learning, augmented reality, the Internet of Things, computational simulation, big data, reinforcement learning and many others. Here are some of my favourite tools for building solutions:
+                    I love to work with innovative technology and in the past I have used Machine Learning, Augmented Reality, Computational Simulation, Big Data, IoT, Reinforcement Learning, and many others. Here are some of my favourite tools for building solutions:
                 </p>
                 <ul className='about-tech' >
                     <li>C++</li>
