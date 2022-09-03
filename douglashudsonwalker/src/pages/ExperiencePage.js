@@ -12,8 +12,8 @@ const ExperiencePage = () => {
         <>
             <div className='about-container'>
                 <div className='about' id='experience'>
-                    <h1>Experiences </h1>
-                    <p>I have had the privilege of working in several industries and with many teams. I've worked in a <span className='highlight' style={{ paddingRight: "0px" }}>student start-up</span> developing applications for advanced medical education, in a <span className='highlight' style={{ paddingRight: "0px" }}>large consulting firm</span> on cloud delivery for several fortune 500 clients, and in a large university performing <span className='highlight' style={{ paddingRight: "0px" }}>research and development</span> for government and defence.</p>
+                    <h1>Experience </h1>
+                    <p>I have had the privilege of working in several industries and with many teams. I've worked in a <span className='highlight' style={{ paddingRight: "0px" }}>student start-up</span> developing education platforms for postgraduate medical students, in a <span className='highlight' style={{ paddingRight: "0px" }}>large consulting firm</span> facilitating automation for fortune 500 clients, and in a large university institute performing <span className='highlight' style={{ paddingRight: "0px" }}>research and development</span> for government and defence.</p>
                     <p>I have also been very fortunate to have a determined <span className='highlight' style={{ paddingRight: "0px" }}>entrepreneurial role model</span> and I am very proud of my experiences growing up in a family business. I understand the tenacity required to <span className='highlight' style={{ paddingRight: "0px" }}>achieve results</span> and the satisfaction of <span className='highlight' style={{ paddingRight: "0px" }}>delivering value to customers.</span></p>
                     {/* <div style={{maxWidth: '100%', textAlign: 'left'}}><button className='resume'>View Resume</button></div> */}
                     <div className='experienceTabs'>

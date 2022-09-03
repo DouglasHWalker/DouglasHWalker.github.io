@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const ProjectList = ({ projects }) => (
     <>
         <div className='featured' id='projects'>
-            <h2 className='highlight'>Featured Projects</h2>
+            <h2 className='highlight'>Projects</h2>
             {/* <p className='highlight'>View all</p> */}
             <ul className='project-list'>
                 {projects.map((project, key) => (

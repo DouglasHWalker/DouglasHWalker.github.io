@@ -15,6 +15,7 @@ const Footer = () => {
                 <li>Experience</li>
                 <li>Projects</li>
                 <li>Contact</li>
+                <li>Resume</li>
             </ul>
         </footer>
     );
