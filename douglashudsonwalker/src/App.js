@@ -5,24 +5,28 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProjectsListPage from "./pages/ProjectsListPage";
 import ProjectPage from "./pages/ProjectPage";
+import PortfolioListPage from "./pages/PortfolioListPage";
+import PortfolioPage from "./pages/PortfolioPage";
 import NavBar from "./NavBar";
-import NotFoundPage from "./pages/NotFoundPage";
 import Footer from "./Footer";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
     <Router>
-      <NavBar />
+      {/* <NavBar /> */}
       <div id="page-body">
         <Routes>
           <Route path="/" element={<HomePage />} exact />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/projects" element={<ProjectsListPage />} />
           <Route path="/project/:name" element={<ProjectPage />} />
+          <Route path="/portfolio" element={<PortfolioListPage />} />
+          <Route path="/portfolio/:name" element={<PortfolioPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }

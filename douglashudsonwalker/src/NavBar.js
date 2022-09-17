@@ -1,8 +1,8 @@
 import React from "react";
 
 import headshot from './images/Headshot.png';
-import { Link, animateScroll as scroll } from "react-scroll";
 import { Link as RLink}  from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const NavBar = () => {
     return (
@@ -23,6 +23,8 @@ const NavBar = () => {
                     <span className="highlight">04</span> Contact</Link></li>
                 {/* <li><Link activeClass="active" to="resume" spy={true} smooth={true} offset={-70} duration={1200}>
                     <span className="highlight">05</span> Resume</Link></li> */}
+                <li><RLink activeClass="active" to="/portfolio">
+                    <span className="highlight">05</span> portfolio</RLink></li>
             </ul>
         </nav>
     );
