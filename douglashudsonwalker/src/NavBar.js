@@ -17,14 +17,13 @@ const NavBar = () => {
                 </Link></li>
                 <li><Link activeClass="active" to="experience" spy={true} smooth={true} offset={-150} duration={1200}>
                     <span className="highlight">02</span> Experience</Link></li>
-                <li><Link activeClass="active" to="projects" spy={true} smooth={true} offset={-150} duration={1200}>
-                    <span className="highlight">03</span> Projects</Link></li>
+                {/* <li><Link activeClass="active" to="projects" spy={true} smooth={true} offset={-150} duration={1200}><span className="highlight">03</span> Projects</Link></li> */}
+                <li><RLink activeClass="active" to="/portfolio"><span className="highlight">03</span>Portfolio</RLink></li>
                 <li><Link activeClass="active" to="contact" spy={true} smooth={true} offset={-150} duration={1200}>
                     <span className="highlight">04</span> Contact</Link></li>
                 {/* <li><Link activeClass="active" to="resume" spy={true} smooth={true} offset={-70} duration={1200}>
                     <span className="highlight">05</span> Resume</Link></li> */}
-                <li><RLink activeClass="active" to="/portfolio">
-                    <span className="highlight">05</span> portfolio</RLink></li>
+                {/* <li><RLink activeClass="active" to="/portfolio"><span className="highlight">05</span> portfolio</RLink></li> */}
             </ul>
         </nav>
     );
