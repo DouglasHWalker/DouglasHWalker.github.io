@@ -51,6 +51,30 @@ body {
   justify-content: center;
 }
 
+.social {
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+}
+
+.social a {
+  color: var(--foreground-color) !important;
+  transition: 0.4s;
+}
+.social a:hover {
+  color: var(--primary-color);
+}
+
+.social svg {
+  margin:8px;
+  height: 32px;
+  width: 32px;
+
+}
+#contact {
+  text-align: center;
+}
 .contact {
   text-align: center;
   color: var(--primary-color);
@@ -382,10 +406,11 @@ nav a:hover {
 }
 
 #page-body {
-  max-width: 1000px;
+  max-width: 38vw;
+  min-width: 900px;
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
 }
 
@@ -524,7 +549,20 @@ nav a:hover {
 }
 
 .about {
-  margin-bottom: 120px;
+  margin-bottom: 128px;
+}
+
+.about a{
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.about a:hover{
+  color: var(--primary-color);
+}
+
+#experience {
+  margin-bottom: 0;
 }
 
 .about h1 {
@@ -552,10 +590,6 @@ nav a:hover {
 
 .about-headshot:hover {
   filter:grayscale(0%);
-}
-
-.about {
-  max-width: 40vw;
 }
 
 #experience {
@@ -814,6 +848,15 @@ button, .content {
   list-style-type: none;
 }
 
+.tab-content a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.tab-content a:hover {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
 .tab-content li::before {
   content: "\666";  
   color: var(--primary-color); 
@@ -837,14 +880,11 @@ button, .content {
 footer {
   background: none;
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-content: center;
   position: fixed;
-  font-weight: lighter;
-  left: 0;
-  height: 100vh;
-  max-width: 16px;
-  flex-wrap: wrap;
+  bottom: 0;
+  width: 100vh;
   z-index: 10;
   font-family: var(--display-sans-font);
 }
@@ -853,7 +893,6 @@ footer ul {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -866,8 +905,8 @@ footer li {
 
   background: var(--primary-color);
   font-weight: 500;
-  padding-top: 64px;
-  padding-left: 16px;
+  padding-top: 32px;
+  padding-left: 128px;
 }
 
 footer a:hover {
@@ -878,7 +917,7 @@ footer a:hover {
 /* DXC Portfolio CSS ----------------------------------------------- */
 .portfolio-header {
   width: 100%;
-  margin-top: 128px;
+  margin-top: 64px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: var(--foreground-color);
 }

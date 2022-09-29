@@ -14,7 +14,7 @@ const Footer = () => {
         ["#937D8F", "#A88FAC", "#D4B2D8", "#5D4E60"],
         ["#A1FCC6", "#E8EFFE", "F1F1F1", "#2E3336"],
         ["#ADD6FC", "#F8EAFE", "FFF", "#2E3336"],
-        ["#a8ff90", "#e1ffdb", "FFF", "#2E3336"],
+        // ["#a8ff90", "#e1ffdb", "FFF", "#2E3336"],
     ];
 
     useEffect(() => {}, []);
@@ -35,8 +35,8 @@ const Footer = () => {
                 <li style={{background: colors[2][0]}} onClick={() => setColorTo(2)}></li>
                 <li style={{background: colors[3][0]}} onClick={() => setColorTo(3)}></li>
                 <li style={{background: colors[4][0]}} onClick={() => setColorTo(4)}></li>
-                <li style={{background: colors[5][0]}} onClick={() => setColorTo(5)} data></li>
-                <li style={{background: colors[6][0]}} onClick={() => setColorTo(6)}></li>
+                <li style={{background: colors[5][0]}} onClick={() => setColorTo(5)}></li>
+                {/* <li style={{background: colors[6][0]}} onClick={() => setColorTo(6)}></li> */}
            </ul>
         </footer>
     );

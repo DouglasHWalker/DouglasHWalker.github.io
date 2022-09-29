@@ -14,7 +14,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 function App() {
   return (
     <Router>
-      <NavBar />
+      {/* <NavBar /> */}
       <div id="page-body">
         <Routes>
           <Route path="/" element={<HomePage />} exact />

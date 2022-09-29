@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import experiences from './experiences-content';
 
-const ExperiencePage = () => {
+const ExperiencePage = (props) => {
     const [currentTab, setCurrentTab] = useState('1');
 
     const handleTabClick = (e) => {
@@ -31,12 +31,12 @@ const ExperiencePage = () => {
                                             <p className='tab-company' style={{ margin: '0' }}>{tab.date}</p>
                                             <ul id='el' className='tab-content' style={{ margin: '0' }}>
                                                 {tab.content.map((para, key) => (
-                                                    <li>{para}</li>
+                                                    <li key={key} dangerouslySetInnerHTML={{__html: para}}></li>
                                                 ))}
                                             </ul>
                                             <div style={{float: 'right', textAlign: 'right'}} className='tech'>
                                                 {tab.tech.map((t, key) => (
-                                                    <p>{t}</p>
+                                                    <p key={key}>{t}</p>
                                                 ))}
                                             </div>
                                         </div>

@@ -30,10 +30,9 @@ const HomePage = () => {
             <p className='quote'>“Uncertainty is an uncomfortable position. But certainty is an absurd one." - <span style={{ fontWeight: "bold", color: "var(--accent-color)" }}>Voltaire.</span></p>
             <AboutPage />
             <ExperiencePage id="experience" />
-            <p id="contact">More coming soon. Project Page under developement. Please get in touch via LinkedIn @<a style={{ color: "pink" }} href="https://www.linkedin.com/in/douglashudsonwalker" target={"_blank"}>douglashudsonwalker</a></p>
             <p className='quote' style={{ marginTop: "64px" }}>"Civilization advances by extending the number of important operations which we can perform without thinking about them." - <span style={{ fontWeight: "bold", color: "var(--accent-color)" }}>Alfred North Whitehead.</span></p>
+            <ContactPage />
             {/* <ProjectList projects={projectContent} /> */}
-            {/* <ContactPage /> */}
         </>
     );
 }

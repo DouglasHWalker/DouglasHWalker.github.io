@@ -3,11 +3,11 @@ import headshot from '../images/Headshot.png'
 
 const AboutPage = () => (
     <>
-        <div className='about-container' style={{ maxWidth: "900px" }}>
+        <div className='about-container' >
             <div className='about'>
-                {/* <h1>About Me</h1> */}
-                <p>Douglas Hudson Walker is an Australian Software Engineer and Researcher. He completed his <span style={{ color: "var(--accent-color)" }}>Bachelor of Software Engineering</span> from the University of South Australia and earned his <span style={{ color: "var(--accent-color)" }}>postgraduate honours</span> at the University of Melbourne.</p>
-                <p>He is an application developer at <span style={{ color: "var(--accent-color)" }}>DXC Technology</span>, and a research assistant at the <span style={{ color: "var(--accent-color)" }}>Research Center for Interactive Virtual Environments.</span> He has experience designing, building, and deploying <span style={{ color: "var(--accent-color)" }}>distributed business applications</span> and has also helped to optimise humanitarian crisis response, decipher news veracity, and personalise online education.</p>
+                {/* <h3 style={{margin:0}}>About</h3> */}
+                <p>Douglas Hudson Walker is an Australian Software Engineer. He completed his <span style={{ color: "var(--accent-color)" }}>Bachelor of Software Engineering</span> at the University of South Australia and earned his <span style={{ color: "var(--accent-color)" }}>postgraduate honours</span> at the University of Melbourne.</p>
+                <p>He is currently an application developer at <span style={{ color: "var(--accent-color)" }}>DXC Technology</span>, and a research assistant at the <span style={{ color: "var(--accent-color)" }}><a href='https://www.unisa.edu.au/research/ive/'>Research Center for Interactive Virtual Environments</a>.</span> He has experience designing, building, and deploying <span style={{ color: "var(--accent-color)" }}>distributed business applications</span> and has also helped to optimise humanitarian crisis response, decipher news veracity, and personalise online education.</p>
                 {/* <p>
                     My ideal role would involve working on the world's most challenging problems and have me contributing to every stage of a solution.
                     I’ve helped to <span className='highlight'>optimise humanitarian crisis response, decipher news veracity, automate financial planning, and personalise online education</span>. I've also worked on <span className='highlight'>digital transformation</span> for many fortune 500 companies and performed <span className='highlight'>research and development</span> with Australian universities, government, and defense.

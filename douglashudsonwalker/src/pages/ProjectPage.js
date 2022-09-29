@@ -16,8 +16,8 @@ const ProjectPage = (props) => {
         <>
             <div style={{marginTop: "150px"}}>
                 <h1>{project.title}</h1>
-                {project.content.map((paragraph, key) => (
-                    <p key={key}>{paragraph}</p>
+                {project.content.map((paragraph, index) => (
+                    <p key={index}>{paragraph}</p>
                 ))}
                 <img src={project.image} />
                 <h3>Other Articles:</h3>
