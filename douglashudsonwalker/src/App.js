@@ -14,8 +14,8 @@ import NotFoundPage from "./pages/NotFoundPage";
 function App() {
   return (
     <Router>
-      {/* <NavBar /> */}
       <div id="page-body">
+      <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} exact />
           <Route path="/about" element={<AboutPage />} />
@@ -26,7 +26,7 @@ function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }

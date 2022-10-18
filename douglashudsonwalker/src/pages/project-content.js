@@ -1,10 +1,9 @@
 const projects = [
     {
         name: 'joadia',
-        title: 'Optimising Humanitarian Crisis Response',
+        title: 'Asset Roadmap',
         summary: [
-            'Integer maximus tortor vel mauris bibendum, ac iaculis dolor ullamcorper.Curabitur dapibus feugiat venenatis.Morbi ac enim sed sem varius sodales tincidunt non orci.',
-            'Integer venenatis viverra leo, ac malesuada dolor finibus ut.Praesent quis nunc id elit vehicula blandit.Cras aliquam venenatis nisi, id consectetur augue dapibus sit amet.',
+            'Dashboard supporting multiple layers of filtering, sorting, grouping, in nested div trello style board.',
         ],
         content: [
             'Built agent capable of optimising strategies to maximise lives saved in simulation. Novel visualisation utilised D3 & TypeScript to generate actor-entity timelines. User-studies  found the visualisation improved sense making for difficult questions by over 60%.',
@@ -13,14 +12,13 @@ const projects = [
             'Performed large user-studies and collated results for use in research publications.',
         ],
         image: require("../images/jodia.png"),
-        technologies: ["JavaScript", "Python", "D3", "Design Patterns", "Reinforcement Learning", "Gym", "Unity", "Data Structures", "LaTeX", "Technical Writing", "Conducting User Studies"]
+        technologies: ["Algorithms", "SQL", "C#", "JavaScript"]
     },
     {
         name: 'bankstudios',
-        title: 'Automate Financial Planning',
+        title: 'Financial Planning',
         summary: [
-            'Integer maximus tortor vel mauris bibendum, ac iaculis dolor ullamcorper.Curabitur dapibus feugiat venenatis.Morbi ac enim sed sem varius sodales tincidunt non orci.',
-            'Integer venenatis viverra leo, ac malesuada dolor finibus ut.Praesent quis nunc id elit vehicula blandit.Cras aliquam venenatis nisi, id consectetur augue dapibus sit amet.',
+            'Integer maximus tortor vel mauris bibendum, ac iaculis dolor ullamcorper.',
         ],
         content: [
             'Predicting the weather is difficult when the lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta dignissim mauris, non dapibus justo. Cras a ultrices nisi, quis auctor justo.',
@@ -35,11 +33,11 @@ const projects = [
             'Morbi rutrum laoreet purus, vitae venenatis est efficitur eu.Pellentesque pharetra bibendum rhoncus.Sed tempus dignissim elementum.'
         ],
         image: require("../images/predictions.png"),
-        technologies: ["C++", "React Native", "Node.js", "Python", "Swift"]
+        technologies: ["React Native",  "Swift", "Python","C++"]
     },
     {
         name: 'lifetime',
-        title: 'Decipher News Veracity.',
+        title: 'News Veracity.',
         summary: [
             'Integer maximus tortor vel mauris bibendum, ac iaculis dolor ullamcorper.Curabitur dapibus feugiat venenatis.Morbi ac enim sed sem varius sodales tincidunt non orci.',
             'Integer venenatis viverra leo, ac malesuada dolor finibus ut.Praesent quis nunc id elit vehicula blandit.Cras aliquam venenatis nisi, id consectetur augue dapibus sit amet.',
@@ -57,7 +55,7 @@ const projects = [
             'Morbi rutrum laoreet purus, vitae venenatis est efficitur eu.Pellentesque pharetra bibendum rhoncus.Sed tempus dignissim elementum.'
         ],
         image: require("../images/Dalle.jpeg"),
-        technologies: ["Natural Language Processing", "Python", "BERT", "LaTeX", "Technical Writing"]
+        technologies: [ "BERT", "LaTeX", "Technical Writing"]
     },
     {
         name: 'bankstudios',

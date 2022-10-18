@@ -1,5 +1,4 @@
 import React from 'react';
-import headshot from '../images/Headshot.png'
 
 const AboutPage = () => (
     <>
@@ -47,9 +46,6 @@ const AboutPage = () => (
                     {/* <li>UML, ERD</li>
                     <li>PDDL</li> */}
                 </ul>
-            </div>
-            <div className='image-container'>
-                <img className='about-headshot' src={headshot} />
             </div>
         </div>
     </>

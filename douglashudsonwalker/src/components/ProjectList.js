@@ -4,23 +4,22 @@ import { Link } from 'react-router-dom';
 const ProjectList = ({ projects }) => (
     <>
         <div className='featured' id='projects'>
-            <h2 className='highlight'>Projects</h2>
-            {/* <p className='highlight'>View all</p> */}
+            <h2 className='highlight'>Recent Contributions</h2>
             <ul className='project-list'>
-                {projects.map((project, key) => (
+                {projects.slice(0,3).map((project, key) => (
                     <li key={key} className='project-list-item'>
 
                         <div className="list_item_content">
                             <h3>{project.title}</h3>
-                            <p>{project.summary}</p>
+                            <p>{project.summary.toString().slice(0,80)}</p>
                             <div className="tech">
                                 {project.technologies.map((tech, key) => (
-                                    <p>{tech}</p>
+                                    <p key={key}>{tech}</p>
                                 ))}
                             </div>
                         </div>
                         <Link to={`/project/${project.name}`}>
-                            <img src={project.image} />
+                            {/* <img src={project.image} /> */}
                         </Link>
                     </li>
                 ))}

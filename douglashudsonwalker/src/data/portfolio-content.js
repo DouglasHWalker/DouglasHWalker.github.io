@@ -18,7 +18,7 @@ const portfolio
                         'Performed large user-studies and collated results for use in research publications.',
                     ],
                     image: require("../images/jodia.png"),
-                    technologies: ["JavaScript", "Python", "D3", "Design Patterns", "Reinforcement Learning", "Gym", "Unity", "Data Structures", "LaTeX", "Technical Writing", "Conducting User Studies"]
+                    technologies: ["Enhancement", "Algorithms"]
                 },
                 {
                     name: 'lifetime',
@@ -84,7 +84,7 @@ const portfolio
                         'Performed large user-studies and collated results for use in research publications.',
                     ],
                     image: require("../images/jodia.png"),
-                    technologies: ["JavaScript", "Python", "D3", "Design Patterns", "Reinforcement Learning", "Gym", "Unity", "Data Structures", "LaTeX", "Technical Writing", "Conducting User Studies"]
+                    technologies: ["JavaScript", "Python", "D3"]
                 },
                 {
                     name: 'lifetime',
