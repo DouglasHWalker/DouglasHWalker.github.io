@@ -28,7 +28,7 @@ const projects = [
         technologies: ["Javascript", "SQL", "C#", "Filters"],
         image: require("../images/roadmap.gif"),
         dateOpened: '17th Oct',
-        dateClosed: '27 Oct',
+        dateClosed: 'Oct 27',
         labels: [
             'Enhancement',
             'C3'
