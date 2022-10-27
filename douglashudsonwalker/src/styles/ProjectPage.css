@@ -1,0 +1,120 @@
+.steps {
+    position: relative;
+    margin-top: 32px;
+  }
+  .steps::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: var(--foreground-color);
+    opacity: 0.5;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+  }
+  
+  .steps-container {
+    position: relative;
+    background-color: inherit;
+    width: calc(50% + 16px);
+  }
+  
+  .steps-container .content {
+    padding: 24px 32px;
+    background-color: var(--secondary-background-color);
+    position: relative;
+    box-shadow: 0px 16px 27px rgb(0 11 30 / 10%);
+  }
+  
+  .steps .steps-container:nth-child(even) {
+    left: calc(50% - 40px);
+    flex-direction: row-reverse;
+  }
+  
+  .steps-container {
+    display: flex;
+  }
+  
+  .steps .steps-container .date {
+    font-weight: 900;
+    font-size: 16px;
+    color: var(--foreground-color);
+    width: 80px;
+    height: 32px;
+    background-color: var(--primary-color);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 777;
+  }
+  
+  .step-line {
+    width: 24px;
+    background-color: var(--foreground-color);
+    height: 2px;
+    margin-top: 16px;
+    opacity: 0.4;
+    flex-shrink: 0;
+  }
+  
+  @media (max-width: 2560px) {
+    .steps::after {
+      left: 40px;
+    }
+    .steps-container {
+      left: 0;
+      flex-direction: row-reverse;
+      width: auto;
+      margin-bottom: 16px;
+    }
+    .steps .steps-container:nth-child(even) {
+      left: 0;
+    }
+  }
+  
+  .additions {
+    color: limegreen;
+  }
+
+  .deletions {
+    padding-left: 4px;
+    color:rgb(255, 50, 50);
+  }
+
+  .quickLook {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .tech {
+    padding-top: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 16px;
+    margin: 0;
+  }
+
+  ul li {
+    display: flex;
+    justify-content: left;
+    line-height: 28px;
+  }
+
+  .checkbox {
+    height: 16px;
+    width: 16px;
+    margin: 4px 10px 4px 0;
+  }
+  .requirement {
+    line-height: 22px !important;
+    margin-bottom: 10px;
+    width: 100%;
+  }

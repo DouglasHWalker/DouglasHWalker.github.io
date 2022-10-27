@@ -6,13 +6,13 @@ import ProjectList from '../components/ProjectList';
 import ContactPage from './ContactPage';
 import headshot from '../images/Headshot.png'
 
-import projectContent from './project-content';
+import projectContent from '../data/project-content';
 import flashcardContent from '../data/flashcard-content';
 import Flashcard from '../components/Flashcard';
 
 const HomePage = () => {
     return (
-        <>
+        <>  
             <div className='portfolio-header'>
                 <div>
                     <h1>Douglas Hudson Walker</h1>

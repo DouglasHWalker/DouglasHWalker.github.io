@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { useRef, useEffect } from 'react';
-import "./Flashcard_Style.css";
+import "../styles/Flashcard_Style.css";
 
 const Flashcard = ({ flashcards }) => {
     useEffect(() => {
@@ -170,7 +170,7 @@ const Flashcard = ({ flashcards }) => {
     }
     return (
         <>
-            <div className="flashcard-page-container">
+            <div className="flashcard-page-container" id="flashcards">
                 <div className="flashcard-container">
                     <h2 className='highlight accent-foreground' style={{ width: "100%" }}>Flashcards</h2>
                     <div className="card-info">

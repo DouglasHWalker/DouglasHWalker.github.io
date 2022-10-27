@@ -20,9 +20,9 @@ function App() {
           <Route path="/" element={<HomePage />} exact />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/projects" element={<ProjectsListPage />} />
-          <Route path="/project/:name" element={<ProjectPage />} />
+          <Route path="/project/:id" element={<ProjectPage />} />
           <Route path="/portfolio" element={<PortfolioListPage />} />
-          <Route path="/portfolio/:name" element={<PortfolioPage />} />
+          <Route path="/portfolio/:id" element={<PortfolioPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>

@@ -263,36 +263,19 @@ button, .contact {
   width: 32%;
 }
 
-.project-list-item:nth-child(even) .list_item_content {
-  box-shadow:  none;
-}
-
-/* .project-list-item:nth-child(even) .list_item_content {
-  grid-column-start: 1;
-  grid-column-end: 13;
-  grid-row-start: 1;
-  grid-row-end: -1;
-  box-shadow:  -4px -4px 8px #111;
-}
-
-.project-list-item:nth-child(even) a {
-  justify-content: end;
-} */
-
 .list_item_content {
   display: flex;
   flex-direction: column;
   align-items: start;
   z-index: 5;
   padding-right: 1.5rem;
+  padding-bottom: 0.5rem;
   grid-column-start: 10;
   grid-column-end: -1;
   grid-row-start: 1;
   grid-row-end: -1;
-  max-height: 200px;
   min-height: 200px;
   /* border: 1px solid #222; */
-  transition: all 0.8s ease;
   box-shadow:  none;
 }
 
@@ -308,10 +291,14 @@ button, .contact {
   box-shadow:  -8px -8px 16px #111;
 } */
 
-.project-list-item:hover >  .list_item_content {
-  transform:translate(-8px, -8px);
+.project-list-item a {
+  transition: 0.6s ease-in-out;
+}
+
+.project-list-item:hover >  a {
+  transform: translate(-8px, -8px);
   cursor: pointer;
-  box-shadow:  8px 8px 8px 0px var(--primary-color);
+  box-shadow:  8px 8px 7px 0px var(--primary-color);
 }
 
 .list_item_content h3 {
@@ -329,10 +316,23 @@ button, .contact {
   font-size: 1rem;
 }
 
+.project-timestamp {
+  color: var(--foreground-color);
+  opacity: 0.5;
+  text-align: left;
+  width: 100%;
+}
+
 .tech {
   display: inline-flex;
   padding-top: 16px;
   flex-wrap: wrap;
+  justify-content: start;
+  width: 100%;
+}
+
+.tech p:nth-last-child(1) {
+  padding-right: 0px;
 }
 
 .tech p {
@@ -410,12 +410,16 @@ nav li {
 nav a {
   text-decoration: none;
   color: var(--foreground-color);
+  opacity: 0.65;
   font-weight: 500;
+  padding: 8px 64px 8px 0;
 }
 
 nav a:hover {
   color: var(--primary-color);
+  opacity: 1;
   transition: 0.8s;
+  cursor: pointer;
 }
 
 #page-body {
@@ -739,8 +743,6 @@ nav {
 }
 
 .tech p {
-  padding-right: 16px;
-  color: var(--accent-color);
   margin: 0;
 }
 
@@ -1070,12 +1072,6 @@ footer a:hover {
   display: inline-flex;
   padding-top: 16px;
   flex-wrap: wrap;
-}
-
-.tech p {
-  padding-right: 16px;
-  color: var(--accent-color);
-  margin: 0;
 }
 
 .portfolio-list-item img {

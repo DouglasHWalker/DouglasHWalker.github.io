@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import projectContent from './project-content';
+import projectContent from '../data/project-content';
 import PortfolioList from '../components/PortfolioList';
 import NotFoundPage from './NotFoundPage';
 

@@ -12,7 +12,7 @@ const NavBar = () => {
         // ["#AAFCB8", "#D7FFF1", "FFF", "#2E3336"],
         // ["#51A0F4", "#FFF", "#99C4F2", "#485D73"],
         // ["#937D8F", "#A88FAC", "#D4B2D8", "#5D4E60"],
-        ["#A1FCC6", "#E8EFFE", "F1F1F1", "#2E3336","#32393B"],
+        ["#A1FCC6", "#E8EFFE", "FFF", "#2E3336","#32393B"],
         ["#aaa", "#2B2B2B", "F1F1F1", "#FFF", "#F9F9F9"],
         // ["#ADD6FC", "#F8EAFE", "FFF", "#2E3336"],
         // ["#a8ff90", "#e1ffdb", "FFF", "#2E3336"],
@@ -35,18 +35,24 @@ const NavBar = () => {
                     <p>Douglas Hudson Walker</p></RLink></li>
             </ul> */}
             <ul>
-                <li><Link className="active" to="about" spy={true} smooth={true} offset={-150} duration={1200}>
-                    <span className="highlight">01</span> About
-                </Link></li>
+                {/* <li><Link className="active" to="contributions" spy={true} smooth={true} offset={-32} duration={1200}>
+                    <span className="highlight">01</span>
+                    Home
+            </Link></li> */}
+                <li><RLink className="active" to="/">Home</RLink></li>
+
+                <li><Link className="active" to="experience" spy={true} smooth={true} offset={-32} duration={1200}>
+                    {/* <span className="highlight">02</span> */}
+                    Experience</Link></li>
                 
-                <li><Link className="active" to="experience" spy={true} smooth={true} offset={-150} duration={1200}>
-                    <span className="highlight">02</span> Experience</Link></li>
-                
-                <li><Link className="active" to="projects" spy={true} smooth={true} offset={-150} duration={1200}><span className="highlight">03</span> Projects</Link></li>
+                <li><Link className="active" to="flashcards" spy={true} smooth={true} offset={-32} duration={1200}>
+                    {/* <span className="highlight">03</span> */}
+                    Flashcards</Link></li>
                 {/* <li><RLink className="active" to="/portfolio"><span className="highlight">03</span>Portfolio</RLink></li> */}
 
-                <li><Link className="active" to="contact" spy={true} smooth={true} offset={-150} duration={1200}>
-                    <span className="highlight">04</span> Contact</Link></li>
+                <li><Link className="active" to="contact" spy={true} smooth={true} offset={-32} duration={1200}>
+                    {/* <span className="highlight">04</span> */}
+                    Contact</Link></li>
                 
                 {/* <li><Link className="active" to="resume" spy={true} smooth={true} offset={-70} duration={1200}>
                     <span className="highlight">05</span> Resume</Link></li> */}
