@@ -20,7 +20,7 @@ const ProjectPage = (props) => {
             <div class="steps">
                 {projects.map((project, key) => (
                     <div class="steps-container">
-                        <div class="content" style={{ maxWidth: "100%" }}>
+                        <div class="content" style={{ maxWidth: "100%", width: "-webkit-fill-available" }}>
                             <h2 style={{ margin: "0 0 8px 0" }}>{project.title} <span className='highlight'>#{project.id}</span></h2>
                             {project.summary.map((paragraph, index) => (
                                 <p key={index}>{paragraph}</p>
@@ -42,25 +42,25 @@ const ProjectPage = (props) => {
                                 <p>SP-<span >{(project.valuePoints / project.complexity).toFixed(2)}</span></p>
                             </div>
                             <br />
-                            <h3>Highlights</h3>
+                            <h3 style={{display: (project.highlights) ? '' : 'none'}}>Highlights</h3>
                             <ul>
-                                {project.highlights.map((item, index) => (
+                                {project?.highlights?.map((item, index) => (
                                     <li key={index}>{item}</li>
                                 ))}
                             </ul>
 
-                            <h3>Requirements</h3>
-                            <ul>
+                            <h3 style={{display: (project.requirements[0]) ? '' : 'none'}}>Requirements</h3>
+                            <ul style={{display: (project.requirements[0]) ? '' : 'none'}}>
                                 {project.requirements.map((item, index) => (
-                                    <li key={index}><input id={index} type="checkbox" className='checkbox' defaultChecked={true} /><label className="requirement" for={index}>{item}</label></li>
+                                    <li key={index}><label className="requirement" for={index}>{item}</label></li>
                                 ))}
                             </ul>
-                            {/* <h3>Solution</h3>
-                            <ul>
+                            <h3 style={{display: (project.solution[0]) ? '' : 'none'}}>Solution</h3>
+                            <ul style={{display: (project.solution[0]) ? '' : 'none'}}>
                                 {project.solution.map((item, index) => (
                                     <li key={index}>{item}</li>
                                 ))}
-                            </ul> */}
+                            </ul>
                             <img src={project.image} style={{ maxWidth: "100%" }} />
                         </div>
                         <i class="step-line"></i>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import experiences from './experiences-content';
+import experiences from '../data/experiences-content';
 
 const ExperiencePage = (props) => {
     const [currentTab, setCurrentTab] = useState('1');

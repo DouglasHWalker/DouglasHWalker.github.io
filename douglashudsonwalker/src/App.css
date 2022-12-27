@@ -244,6 +244,7 @@ button, .contact {
 
 .project-list {
   display: flex;
+  margin: 0;
   list-style-type: none;
   padding-top: 0px;
   flex-wrap: wrap;
