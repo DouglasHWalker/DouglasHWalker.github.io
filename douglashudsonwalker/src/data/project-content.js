@@ -1,7 +1,317 @@
 const projects = [
     {
+        id: 976,
+        title: 'Refactor Play to Asset across the tool',
+        summary: [
+            'Items are referred to as Plays and as Assets throughout the tool. Refactor this so that all are named assets consistantly in the frontend. Additionally, removed two pages that were no longer used and redundant.',
+        ],
+        tagline: [
+            'Make item names consistent',
+        ],
+        requirements: [],
+        solution: [
+        ],
+        technologies: ["Visual Studio"],
+        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The before and after
+        dateOpened: 'Dec 1',
+        dateClosed: 'Dec 3',
+        labels: [
+            'Enhancement',
+        ],
+        additions: 49,
+        deletions: 440,
+        complexity: 1,
+        valuePoints: 2,
+    },
+    {
+        id: 934,
+        title: 'Surface Item Links and Downloads',
+        summary: [
+            'For each item, various links and downloads should be visible on the summary page. For each sub-item the links and downloads should be visible in another section. Create a summary card for the links and download in an item. Validate and surface hyperlinks for the item and its sub-items. Uploaded files are not being surfaced in the tool. Resolve this issue.',
+        ],
+        tagline: [
+            'Create new html elements and styling.',
+        ],
+        requirements: [],
+        solution: [
+        ],
+        technologies: ["C#", "SQL", "HTML", "CSS", "JavaScript"],
+        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The before and after
+        dateOpened: 'Dec 1',
+        dateClosed: 'Dec 3',
+        labels: [
+            'Enhancement', 'Bug',
+        ],
+        additions: 351,
+        deletions: 145,
+        complexity: 2,
+        valuePoints: 5,
+    },
+    {
+        id: 961,
+        title: 'Default Item Creation Status Red',
+        summary: [
+            'Make the default status of an item "Red" when it is created. Additionally, Add a filter for archived assets and remove the button that performed this function.',
+        ],
+        tagline: [
+            'Also, remove redundant button, use filter instead.',
+        ],
+        requirements: [],
+        solution: [
+        ],
+        technologies: ["C#"],
+        // image: 'require("../images/roadmap.gif")',
+        dateOpened: 'Nov 30',
+        dateClosed: 'Nov 30',
+        labels: [
+            'Enhancement',
+        ],
+        additions: 6,
+        deletions: 33,
+        complexity: 1,
+        valuePoints: 2,
+    },
+    {
+        id: 959,
+        title: 'Resolve Enrollment Dropdown Issue',
+        summary: [
+            'Identified bug. When enrolling an account into a specific item. The enrol button does not show unless the account region is changed in the dropdown. Users in the dropdowns default region would be confused as they cannot see any enrol button. Resolved by setting the enrol button to visible by default.',
+        ],
+        tagline: [
+            'Button only conditionally visible.',
+        ],
+        requirements: [],
+        solution: [
+        ],
+        technologies: ["C#"],
+        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The query
+        dateOpened: 'Nov 30',
+        dateClosed: 'Nov 30',
+        labels: [
+            'Bug',
+        ],
+        additions: 2,
+        deletions: 1,
+        complexity: 1,
+        valuePoints: 2,
+    },
+    {
+        id: 933,
+        title: 'Multiple pages: Add field and filters',
+        summary: [
+            'When viewing an item, show the team that the item is managed by. Resolve issues with viewing the team in other pages. Add team label to item deployment summary. Add team and filters to several table views.',
+        ],
+        tagline: [
+            'Add filters and team to several pages.',
+        ],
+        requirements: [],
+        solution: [
+        ],
+        technologies: ["C#", "SQL", "HTML", "CSS", "JavaScript"],
+        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - One of the pages
+        dateOpened: 'Nov 25',
+        dateClosed: 'Nov 28',
+        labels: [
+            'Enhancement',
+        ],
+        additions: 103,
+        deletions: 40,
+        complexity: 2,
+        valuePoints: 5,
+    },
+    {
+        id: 741,
+        title: 'Resolve Issue in Bulk Status Update',
+        summary: [
+            'Bulk status update fails when not sub-items exist. Update the SQL creation query to create the required sub-items when none-exist.',
+        ],
+        tagline: [
+            'Create sub-items when none exist.',
+        ],
+        requirements: [],
+        solution: [
+        ],
+        technologies: ["SQL"],
+        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The query
+        dateOpened: 'Oct 17',
+        dateClosed: 'Oct 21',
+        labels: [
+            'Bug',
+        ],
+        additions: 13,
+        deletions: 0,
+        complexity: 2,
+        valuePoints: 2,
+    },
+    {
+        id: 844,
+        title: 'Update Legacy Data',
+        summary: [
+            'Create an SQL query that updates legacy and inconsistent data to new values. Ensure important data is not lost. The aim is to improve data quality.',
+        ],
+        tagline: [
+            'Improve data quality by improving consistency.',
+        ],
+        requirements: [],
+        solution: [
+        ],
+        technologies: ["JavaScript", "C#", "SQL", "HTML", "CSS"],
+        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The query
+        dateOpened: 'Nov 1',
+        dateClosed: 'Nov 3',
+        labels: [
+            'Enhancement',
+        ],
+        additions: 22,
+        deletions: 1,
+        complexity: 2,
+        valuePoints: 2,
+    },
+    {
+        id: 912,
+        title: 'Change Item Catalogue Functionality',
+        summary: [
+            'Create a modal that allows users to choose whether to edit and item, or move it to another catalogue. When an item\'s catalogue is changed, the item should disappear from the view and show up in another page. The user should only able to choose from catalogues they have access to. Only users with edit privileges can access the edit item section.',
+        ],
+        tagline: [
+            'Create modal for moving item to different catalogue.',
+        ],
+        requirements: [],
+        solution: [
+            'Used JavaScript functions to update page elements when changes were made. This ensured no page reload was required.',
+            'Built HTML and CSS for the modal and elements for user functionality.',
+            'C# and SQL to update the item in the database.',
+        ],
+        technologies: ["JavaScript", "C#", "SQL", "HTML", "CSS"],
+        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The Modal
+        dateOpened: 'Nov 21',
+        dateClosed: 'Nov 24',
+        labels: [
+            'Enhancement',
+        ],
+        additions: 137,
+        deletions: 11,
+        complexity: 2,
+        valuePoints: 2,
+    },
+    {
+        id: 880,
+        title: 'Remove Duplicate Heading',
+        summary: [
+            'A Heading is duplicated on the home page. On discussion with stakeholders the functionality under the heading is not being used. This \'external links\' functionality should be removed and hidden for now. Identify all the code related to the feature and remove it. Tag this issue so that we can find the branch and code later if we need it again.',
+        ],
+        tagline: [
+            'Remove/Hide unused Feature',
+        ],
+        requirements: [],
+        solution: [],
+        technologies: ["C#", "CSS", "C#", "JavaScript"],
+        // image: 'require("../images/roadmap.gif")', 
+        dateOpened: 'Nov 24',
+        dateClosed: 'Nov 24',
+        labels: [
+            'Bug',
+        ],
+        additions: 14,
+        deletions: 92,
+        complexity: 1,
+        valuePoints: 1,
+    },
+    {
+        id: 854,
+        title: 'Restrict Access by Location',
+        summary: [
+            'Created functions that check if the user is from the desired regions or subregions. If they are then the elements and features are initialised on page load. If they are not the user is redirected if they do not have access to the page and a message is displayed describing the user access issue.',
+        ],
+        tagline: [
+            'Only APAC region users should have access to the functionlity.',
+        ],
+        requirements: [],
+        solution: [],
+        technologies: ["CSS", "THML", "C#", "JavaScript"],
+        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE 
+        dateOpened: 'Nov 22',
+        dateClosed: 'Nov 22',
+        labels: [
+            'Enhancement',
+        ],
+        additions: 77,
+        deletions: 15,
+        complexity: 2,
+        valuePoints: 2,
+    },
+    {
+        id: 879,
+        title: 'Reuasable Status Tooltip',
+        summary: [
+            'Create a reusable tooltip that describes the meaning of the various item statuses. The tooltip should have one place of modification and be triggered by hover on a info icon. Created a JavaScript function that registers the tooltip in the page and provides the hover functionality. Created the functionlity and template for creating reusable and readable tooltips in future development.',
+        ],
+        tagline: [
+            'Provide Status descriptions on hover.',
+        ],
+        requirements: [],
+        solution: [],
+        technologies: ["CSS", "THML", "C#", "JavaScript"],
+        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The tooltip
+        dateOpened: 'Nov 22',
+        dateClosed: 'Nov 22',
+        labels: [
+            'Enhancement',
+        ],
+        additions: 214,
+        deletions: 54,
+        complexity: 2,
+        valuePoints: 5,
+    },
+    {
+        id: 879,
+        title: 'Link to Item View If Admin',
+        summary: [
+            'Provide a quick access button to the edit item screen if the user is an admin. When viewing the list of items admins should be able to navigate quickly to view and alter the item. Additional cleanup of session variables in relavent pages.',
+        ],
+        tagline: [
+            'Quick access to Edit Item in List View',
+        ],
+        requirements: [],
+        solution: [],
+        technologies: ["C#", "HTML", "JavaScript"],
+        // image: 'require("../images/roadmap.gif")',
+        dateOpened: 'Nov 15',
+        dateClosed: 'Nov 17',
+        labels: [
+            'Enhancement',
+        ],
+        additions: 204,
+        deletions: 113,
+        complexity: 2,
+        valuePoints: 2,
+    },
+    {
+        id: 878,
+        title: 'Resolve Numeric Ordering for Sequence',
+        summary: [
+            'A sequence of items were being presented in the following format: 1.1, 2.2, 2.3, 3.4 etc. The desired format is: 1.1, 2.1, 2.2, 3.1 etc. The issue was that the sequence number was being saved to the database to track order of creation. When displaying the sequence the sub-sequence was not taken into account. Resolution was to restart the count on the frontend when encountering a parent step. No changes to the database. This issue is part of a larger problem with item sequence, modifying item order and deletion. This is a temporary fix while stakeholders discuss the objectives of item ordering and changes.',
+        ],
+        tagline: [
+            'Nested item order should be 1.1, 1.2, 2.1 etc.',
+        ],
+        requirements: [],
+        solution: [],
+        technologies: ["C#"],
+        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE
+        dateOpened: 'Nov 13',
+        dateClosed: 'Nov 16',
+        labels: [
+            'Bug'
+        ],
+        additions: 24,
+        deletions: 15,
+        complexity: 2,
+        valuePoints: 1,
+    },
+    {
         id: 861,
-        title: 'Add Filter to Trello View',
+        title: 'Collection Filter for Trello View',
         summary: [
             'Items in the Trello View need to be filtered by the technologies they have avaliable. Each item has a list of technologies it has deployed. Each item list needs to be filtered against the selected technology filter or search query. This was acheived using several JavaScript functions that map the technologies and compare values using dictionary matching. Additionally, publish status filters were added, along with export functions and improvements to null handling in filters.',
         ],
@@ -11,7 +321,7 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["JavaScript", "C#", "HTML"],
-        // image: 'require("../images/roadmap.gif")',
+        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - code for filter function or the collection mapping
         dateOpened: 'Nov 2',
         dateClosed: 'Nov 8',
         labels: [
@@ -241,7 +551,7 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["JavaScript", "C#", "HTML", "CSS"],
-        // image: 'require("../images/roadmap.gif")',
+        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - maybe before and after
         dateOpened: 'Oct 13',
         dateClosed: 'Oct 13',
         labels: [
@@ -254,7 +564,7 @@ const projects = [
     },
     {
         id: 682,
-        title: 'Extend Bulk Update Functionlity',
+        title: 'Extend Bulk Update Functionality',
         summary: [
             'Extend previously implemented bulk update functionlity so that the who, when, and in some cases why is captured.',
         ],
@@ -279,7 +589,7 @@ const projects = [
             'Database updates require a certain format for business analysis in PowerBI',
         ],
         technologies: ["JavaScript"],
-        // image: 'require("../images/roadmap.gif")',
+        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - of new modal before and after
         dateOpened: 'Oct 6',
         dateClosed: 'Oct 6',
         labels: [
@@ -439,7 +749,7 @@ const projects = [
             'A field for displaying this timestamp was created in multiple pages',
         ],
         technologies: ["SQL", "JavaScript", "CSS", "HTML", "C#"],
-        // image: 'require("../images/roadmap.gif")',
+        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - showing timestamp or summary box
         dateOpened: 'Sep 12',
         dateClosed: 'Sep 15',
         labels: ['Enhancement'
@@ -504,7 +814,7 @@ const projects = [
             'Resolved an issue within the DataTables library that did not handle & symbols.',
         ],
         technologies: ["SQL", "JavaScript", "CSS", "HTML", "C#"],
-        // image: 'require("../images/roadmap.gif")',
+        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - this is a possible duplicate
         dateOpened: 'Sep 10',
         dateClosed: 'Sep 13',
         labels: [
@@ -542,7 +852,7 @@ const projects = [
             'Optimise the query by removing the UNION and replacing with strategic INNER JOINS',
         ],
         technologies: ["SQL", "JavaScript", "CSS", "HTML", "C#"],
-        // image: 'require("../images/roadmap.gif")',
+        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - of SQL query and results
         dateOpened: 'Sep 10',
         dateClosed: 'Sep 13',
         labels: [
@@ -659,7 +969,7 @@ const projects = [
             'One of the first significant tasks given in the internship. Add a button to a page modal that allows users to delete a step and sub-step from a list of steps and sub-steps.',
         ],
         tagline: [
-            'Add delete functionality for seqeunce.',
+            'Add delete functionality for sequence.',
         ],
         requirements: [
             'Add button for deleting steps and substeps in modal',
@@ -674,7 +984,7 @@ const projects = [
             'Sub steps are deleted using an sql query that checks for child steps',
         ],
         technologies: ["SQL", "C#", "HTML", " CSS"],
-        // image: 'require("../images/roadmap.gif")',
+        // image: 'require("../images/roadmap.gif")',  INCLUDE IMAGE - delete modal
         dateOpened: 'Aug 29',
         dateClosed: 'Aug 30',
         labels: [

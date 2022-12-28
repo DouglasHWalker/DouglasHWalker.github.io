@@ -36,9 +36,9 @@
   }
   
   .steps .steps-container .date {
-    font-weight: 900;
+    font-weight: 800;
     font-size: 16px;
-    color: var(--foreground-color);
+    color: var(--secondary-background-color);
     width: 80px;
     height: 32px;
     background-color: var(--primary-color);
