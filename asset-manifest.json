@@ -1,21 +1,38 @@
 {
   "files": {
-    "main.css": "/static/css/main.c891331c.css",
-    "main.js": "/static/js/main.12a99f09.js",
+    "main.css": "/static/css/main.3729142c.css",
+    "main.js": "/static/js/main.1337c80d.js",
     "static/js/787.e9db283c.chunk.js": "/static/js/787.e9db283c.chunk.js",
+    "static/media/datatables.gif": "/static/media/datatables.2fbb9595f838d66e9bf0.gif",
+    "static/media/triage.gif": "/static/media/triage.4146e5102b76d7757e81.gif",
     "static/media/roadmap.gif": "/static/media/roadmap.e259946e8c21169ff733.gif",
+    "static/media/bulk_step_update.gif": "/static/media/bulk_step_update.782e2a2ca849a0549e82.gif",
+    "static/media/update_team.gif": "/static/media/update_team.4b57a825b676b84b1355.gif",
+    "static/media/delete_action.gif": "/static/media/delete_action.2521346135c5186e6cf2.gif",
     "static/media/Dalle.jpeg": "/static/media/Dalle.f8ced0ca8698afab2056.jpeg",
     "static/media/predictions.png": "/static/media/predictions.ad2b6973c38c17b0744e.png",
     "static/media/jodia.png": "/static/media/jodia.19380d4bc864c7c46a39.png",
     "static/media/Headshot.png": "/static/media/Headshot.396de9c3a76b952e5cbb.png",
+    "static/media/teams.png": "/static/media/teams.79c72219a2daccf7c912.png",
+    "static/media/control.png": "/static/media/control.6c1e41ef40665884b8e7.png",
+    "static/media/timestamp.png": "/static/media/timestamp.742dfe0e45e9c65531c3.png",
+    "static/media/deployment_roadmap.png": "/static/media/deployment_roadmap.313907236ca990cc6f87.png",
+    "static/media/asset_status_tooltip.png": "/static/media/asset_status_tooltip.634819e53965d97925e4.png",
+    "static/media/downloads.png": "/static/media/downloads.15379007d4c6bd84ff49.png",
+    "static/media/filterfunc.png": "/static/media/filterfunc.3b5f048b848c46d27a7d.png",
+    "static/media/update_publish_query.png": "/static/media/update_publish_query.15292adb4aa60b76e0bf.png",
     "static/media/dttemplate.png": "/static/media/dttemplate.55d54898bb350986263c.png",
+    "static/media/sequence.png": "/static/media/sequence.43d22ee5c39569a6c1b3.png",
+    "static/media/deployment_roadmap_query.png": "/static/media/deployment_roadmap_query.2b1fff30597cdd18c8d3.png",
+    "static/media/legacy_query.png": "/static/media/legacy_query.b047e3df9a69bd11cb3b.png",
+    "static/media/bulk_status.png": "/static/media/bulk_status.5ab6ce772e97056c1de9.png",
     "index.html": "/index.html",
-    "main.c891331c.css.map": "/static/css/main.c891331c.css.map",
-    "main.12a99f09.js.map": "/static/js/main.12a99f09.js.map",
+    "main.3729142c.css.map": "/static/css/main.3729142c.css.map",
+    "main.1337c80d.js.map": "/static/js/main.1337c80d.js.map",
     "787.e9db283c.chunk.js.map": "/static/js/787.e9db283c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c891331c.css",
-    "static/js/main.12a99f09.js"
+    "static/css/main.3729142c.css",
+    "static/js/main.1337c80d.js"
   ]
 }
