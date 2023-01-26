@@ -24,23 +24,27 @@ const ProjectPage = (props) => {
             <div>
                 <p>
                     During my time at DXC Technology, I gained invaluable experience as a full-stack developer, utilizing an array of technologies such as C#, .NET Framework, MS SQL, JavaScript, HTML, CSS, Bootstrap,
-                    and several JavaScript libraries. Not only did I sharpen my skills, but I also had the opportunity to apply them in real-world projects, recieving positive feedback for my proactive approach,
+                    and several JavaScript libraries. Not only did I enhance these software engineering skills, I was to apply them in real-world projects, recieving positive feedback for my proactive approach,
                     problem-solving, initiative, high-quality work, and for going above and beyond my expectations and responsibilities.
                     <br />
                     <br />
-                    I also participated actively, in daily standup meetings, weekly project meetings, and requirements gathering sessions. I was even given the chance to showcase my work to key stakeholders and the APAC executive team,
+                    I also participated actively, in daily standup meetings, weekly project meetings, and requirements gathering sessions. I was even given the chance to showcase my work to key stakeholders and to the APAC executive team,
                     making it an unforgettable experience. One of the major highlights of the internship was the opportunity to redesign and implement a software architecture that improved the modularity, maintainability,
                     performance, scalability, and usability of the project. My work was well-received by my colleagues and bosses, as it provided a clear strategy and prototype for improving the project's success and user experience.
                     <br />
                     <br />
-                    Through this internship, I was able to make a significant impact on the project, doubling the average lines per day for a Junior Developer and working on many new features and enhancements.
+                    Throughout my time at DXC, I was able to make a significant impact on key projects, doubling the typical lines per day for a Junior Developer and working on many new features and enhancements.
                     I am proud to showcase my portfolio of work and am honored to have had the opportunity to work with such a talented team and grateful for the valuable experience I gained.
                 </p>
                 <p>
                     <br/>
-                    NOTE: You are using the pdf version of this portfolio.  <br/>A web version is available here:
-                    <a href='https://douglashwalker.github.io' className='accent' style={{marginLeft: '8px'}}>douglashwalker@github.io</a>
-
+                    NOTE: You are using the pdf version of this portfolio. The web version will allow you to view the animated versions of each image.  It is available here:
+                    <a href='https://douglashwalker.github.io' className='accent' style={{ marginLeft: '8px' }}>douglashwalker@github.io</a>
+                    <br />
+                    <br />
+                    IMPORTANT: If any image is too small in the pdf, resize your pdf viewer so that the image is larger (all images are good resolutions).
+                    If the images are too small in the webview, right click the image and open it in a new tab.
+                
                 </p>
             </div>
             <h2 className='highlight' style={{ marginLeft: '25%', fontSize: '1.5rem', textAlign: 'center', marginBottom: '0px' }}>Quick Stats</h2>
@@ -52,12 +56,16 @@ const ProjectPage = (props) => {
                         <td>{projects.length}</td>
                     </tr>
                     <tr>
+                        <th>GitHub Contributions</th>
+                        <td>262</td>
+                    </tr>
+                    <tr>
                         <th>Lines Added</th>
-                        <td>10696</td>
+                        <td>10,696</td>
                     </tr>
                     <tr>
                         <th>Lines Deleted</th>
-                        <td>7103</td>
+                        <td>7,103</td>
                     </tr>
                     <tr>
                         <th>Daily LoC</th>

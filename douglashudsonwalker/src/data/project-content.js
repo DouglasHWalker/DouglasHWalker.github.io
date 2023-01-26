@@ -52,12 +52,12 @@ const projects = [
             'Created a page element that can be resused as a navigation bar for several pages within the platform. Users were experiencing some navigation issues which prompted this git issue. I used this opportunity to create the reusable control and update several pages so that future expansion of the section is easier.',
         ],
         tagline: [
-            'Reusuable Naviagation Element to improve Future Development',
+            'Reusuable Navigation Element',
         ],
         requirements: [],
         solution: [],
         technologies: ["C#", "JavaScript", "HTML", "CSS"],
-        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The Control
+        image: require("../images/control.png"),
         dateOpened: 'Dec 15',
         dateClosed: 'Dec 15',
         labels: [
@@ -80,7 +80,7 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["SQL",],
-        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The query
+        image: require("../images/legacy_query.png"),
         dateOpened: 'Dec 5',
         dateClosed: 'Dec 10',
         labels: [
@@ -165,7 +165,7 @@ const projects = [
         ],
         solution: [],
         technologies: ["C#", "JavaScript", "SQL", "HTML", "CSS"],
-        image: 'require("../images/triage.gif")',
+        image: require("../images/triage.gif"),
         dateOpened: 'Dec 1',
         dateClosed: 'Dec 8',
         labels: [
@@ -279,7 +279,7 @@ const projects = [
         solution: [
         ],
         technologies: ["C#", "SQL", "HTML", "CSS", "JavaScript"],
-        // image: 'require("../images/roadmap.gif")', UINCLUDE IMAGE - Downloads.png
+        image: require("../images/downloads.png"),
         dateOpened: 'Dec 1',
         dateClosed: 'Dec 3',
         labels: [
@@ -303,7 +303,6 @@ const projects = [
         solution: [
         ],
         technologies: ["C#"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Nov 30',
         dateClosed: 'Nov 30',
         labels: [
@@ -327,7 +326,6 @@ const projects = [
         solution: [
         ],
         technologies: ["C#"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Nov 30',
         dateClosed: 'Nov 30',
         labels: [
@@ -351,7 +349,7 @@ const projects = [
         solution: [
         ],
         technologies: ["C#", "SQL", "HTML", "CSS", "JavaScript"],
-        image: 'require("../images/teams.png")',
+        image: require("../images/teams.png"),
         dateOpened: 'Nov 25',
         dateClosed: 'Nov 28',
         labels: [
@@ -375,7 +373,7 @@ const projects = [
         solution: [
         ],
         technologies: ["SQL"],
-        image: 'require("../images/bulk_status.png")',
+        image: require("../images/bulk_status.png"),
         dateOpened: 'Oct 17',
         dateClosed: 'Oct 21',
         labels: [
@@ -399,7 +397,7 @@ const projects = [
         solution: [
         ],
         technologies: ["SQL"],
-        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The query
+        image: require("../images/update_publish_query.png"),
         dateOpened: 'Nov 1',
         dateClosed: 'Nov 3',
         labels: [
@@ -414,7 +412,7 @@ const projects = [
         id: 912,
         title: 'Change Item Catalogue Functionality',
         summary: [
-            'Create a modal that allows users to choose whether to edit and item, or move it to another catalogue. When an item\'s catalogue is changed, the item should disappear from the view and show up in another page. The user should only able to choose from catalogues they have access to. Only users with edit privileges can access the edit item section.',
+            'Create a modal that allows users to choose whether to edit an item, or move it to another catalogue. When an item\'s catalogue is changed, the item should disappear from the view and show up in another page. The user should only able to choose from catalogues they have access to. Only users with edit privileges can access the edit item section.',
         ],
         tagline: [
             'Create modal for moving item to different catalogue.',
@@ -426,7 +424,7 @@ const projects = [
             'C# and SQL to update the item in the database.',
         ],
         technologies: ["JavaScript", "C#", "SQL", "HTML", "CSS"],
-        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The Modal
+        image: require("../images/update_team.gif"),
         dateOpened: 'Nov 21',
         dateClosed: 'Nov 24',
         labels: [
@@ -471,7 +469,6 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["CSS", "THML", "C#", "JavaScript"],
-        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE 
         dateOpened: 'Nov 22',
         dateClosed: 'Nov 22',
         labels: [
@@ -494,7 +491,7 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["CSS", "THML", "C#", "JavaScript"],
-        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The tooltip
+        image: require("../images/asset_status_tooltip.png"),
         dateOpened: 'Nov 22',
         dateClosed: 'Nov 22',
         labels: [
@@ -509,7 +506,7 @@ const projects = [
         id: 879,
         title: 'Link to Item View If Admin',
         summary: [
-            'Provide a quick access button to the edit item screen if the user is an admin. When viewing the list of items admins should be able to navigate quickly to view and alter the item. Additional cleanup of session variables in relavent pages.',
+            'Provide a quick access button to the edit item screen if the user is an admin. When viewing the list of items admins should be able to navigate quickly to view and alter the item. Additional cleanup of session variables in relevant pages.',
         ],
         tagline: [
             'Quick access to Edit Item in List View',
@@ -517,7 +514,6 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["C#", "HTML", "JavaScript"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Nov 15',
         dateClosed: 'Nov 17',
         labels: [
@@ -540,7 +536,7 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["C#"],
-        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE
+        image: require("../images/sequence.png"),
         dateOpened: 'Nov 13',
         dateClosed: 'Nov 16',
         labels: [
@@ -564,7 +560,7 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["JavaScript", "C#", "HTML"],
-        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - code for filter function or the collection mapping
+        image: require("../images/filterfunc.png"),
         dateOpened: 'Nov 2',
         dateClosed: 'Nov 8',
         labels: [
@@ -587,7 +583,6 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["C#"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Nov 2',
         dateClosed: 'Nov 3',
         labels: [
@@ -610,7 +605,6 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["C#"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Nov 2',
         dateClosed: 'Nov 3',
         labels: [
@@ -633,7 +627,6 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["SQL", "C#", "HTML"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Nov 1',
         dateClosed: 'Nov 2',
         labels: [
@@ -656,7 +649,6 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["SQL", "C#", "HTML"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Oct 31',
         dateClosed: 'Oct 31',
         labels: [
@@ -679,7 +671,6 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["C#"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Oct 31',
         dateClosed: 'Oct 31',
         labels: [
@@ -702,7 +693,6 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["C#", "SQL"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Nov 4',
         dateClosed: 'Nov 4',
         labels: [
@@ -725,7 +715,6 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["C#", "HTML", "CSS"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Oct 25',
         dateClosed: 'Oct 25',
         labels: [
@@ -748,7 +737,6 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["SQL"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Oct 14',
         dateClosed: 'Oct 14',
         labels: [
@@ -771,7 +759,6 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["JavaScript", "C#", "HTML", "CSS"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Oct 14',
         dateClosed: 'Oct 14',
         labels: [
@@ -794,7 +781,7 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["JavaScript", "C#", "HTML", "CSS"],
-        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - maybe before and after
+        image: require("../images/datatables.gif"),
         dateOpened: 'Oct 13',
         dateClosed: 'Oct 13',
         labels: [
@@ -832,7 +819,7 @@ const projects = [
             'Database updates require a certain format for business analysis in PowerBI',
         ],
         technologies: ["JavaScript"],
-        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - of new modal before and after
+        image: require("../images/bulk_step_update.gif"),
         dateOpened: 'Oct 6',
         dateClosed: 'Oct 6',
         labels: [
@@ -855,7 +842,6 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["JavaScript"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Oct 6',
         dateClosed: 'Oct 6',
         labels: [
@@ -878,7 +864,6 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["JavaScript"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Sep 30',
         dateClosed: 'Sep 30',
         labels: [
@@ -902,7 +887,6 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["JavaScript", "HTML", "C#"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Sep 15',
         dateClosed: 'Sep 16',
         labels: [
@@ -925,7 +909,6 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["SQL", "JavaScript", "CSS", "HTML", "C#"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Sep 15',
         dateClosed: 'Sep 16',
         labels: [
@@ -959,7 +942,6 @@ const projects = [
             'Some fields could be nullable conditionally if other data was set correctly',
         ],
         technologies: ["SQL", "JavaScript", "CSS", "HTML", "C#"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Sep 14',
         dateClosed: 'Sep 16',
         labels: [
@@ -992,7 +974,7 @@ const projects = [
             'A field for displaying this timestamp was created in multiple pages',
         ],
         technologies: ["SQL", "JavaScript", "CSS", "HTML", "C#"],
-        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - showing timestamp or summary box
+        image: require("../images/timestamp.png"),
         dateOpened: 'Sep 12',
         dateClosed: 'Sep 15',
         labels: ['Enhancement'
@@ -1020,7 +1002,6 @@ const projects = [
             'Restyled button placement for popular function',
         ],
         technologies: ["SQL", "JavaScript", "CSS", "HTML", "C#"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Sep 12',
         dateClosed: 'Sep 14',
         labels: [
@@ -1057,7 +1038,7 @@ const projects = [
             'Resolved an issue within the DataTables library that did not handle & symbols.',
         ],
         technologies: ["SQL", "JavaScript", "CSS", "HTML", "C#"],
-        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - this is a possible duplicate
+        image: require("../images/deployment_roadmap.png"),
         dateOpened: 'Sep 10',
         dateClosed: 'Sep 13',
         labels: [
@@ -1095,7 +1076,7 @@ const projects = [
             'Optimise the query by removing the UNION and replacing with strategic INNER JOINS',
         ],
         technologies: ["SQL", "JavaScript", "CSS", "HTML", "C#"],
-        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - of SQL query and results
+        image: require("../images/deployment_roadmap_query.png"),
         dateOpened: 'Sep 10',
         dateClosed: 'Sep 13',
         labels: [
@@ -1130,7 +1111,6 @@ const projects = [
             'Used JQuery Web Methods to prompt server-side functions',
         ],
         technologies: ["SQL", "JavaScript", "CSS", "HTML", "C#"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Sep 2',
         dateClosed: 'Sep 5',
         labels: [
@@ -1160,7 +1140,6 @@ const projects = [
             'SQL update queries where used. UPDATE Table SET DeleteFlag = 1 FROM Tables WHERE \'itemID is match\'',
         ],
         technologies: ["SQL"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Sep 7',
         dateClosed: 'Sep 7',
         labels: [
@@ -1194,7 +1173,6 @@ const projects = [
             'Resolved by adding a spacer and ensuring the first value could not be saved but could be selected.',
         ],
         technologies: ["C#"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Aug 31',
         dateClosed: 'Aug 31',
         labels: [
@@ -1227,7 +1205,7 @@ const projects = [
             'Sub steps are deleted using an sql query that checks for child steps',
         ],
         technologies: ["SQL", "C#", "HTML", " CSS"],
-        // image: 'require("../images/roadmap.gif")',  INCLUDE IMAGE - delete modal
+        image: require("../images/delete_action.gif"),
         dateOpened: 'Aug 29',
         dateClosed: 'Aug 30',
         labels: [
@@ -1256,7 +1234,6 @@ const projects = [
             'Element is hidden on the server side.',
         ],
         technologies: ["C#", "CSS"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Aug 31',
         dateClosed: 'Aug 31',
         labels: [
@@ -1286,7 +1263,6 @@ const projects = [
             'First contribution to the project and team.'
         ],
         technologies: ["C#", "Debugging", "Testing"],
-        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Aug 26',
         dateClosed: 'Aug 26',
         labels: [
@@ -1396,8 +1372,7 @@ const projects = [
             "The timestamp and users details should be saved and surfaced in the summary of the task.",
             "If all task actions are set to 'Not Applicable' and the user sets an action to 'Complete' the overall task should be set to 'Complete' also.",
         ],
-        solution: [
-        ],
+        solution: [],
         highlights: [
             'This feature required implementation within highly coupled modules. The updates to data also required propagation to related data whilst maintaining data quality. The existing functionality performed many steps to ensure this quality but to minimise performance load on the server, the existing code needed to be understood and then repurposed into a bulk update.',
             'On completion the feature significantly improved user experience, allowing them to complete a task in 3 actions rather than 2n actions, where n is the number of steps.'
