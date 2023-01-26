@@ -220,6 +220,11 @@ button, .contact {
   padding-right: 8px;
 }
 
+.accent {
+  color: var(--accent-color);
+  padding-right: 8px;
+}
+
 .about-tech {
   display: inline-flex;
   flex-wrap: wrap;
@@ -430,6 +435,7 @@ nav a:hover {
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
+  padding: 16px !important;
 }
 
 #add-comment-form {

@@ -9,7 +9,7 @@ import '../styles/ProjectPage.css';
 const ProjectPage = (props) => {
     const { id } = useParams();
     const project = projectContent.find(project => project.id == id);
-    const projects = projectContent.sort((p1, p2) => Date.parse(p1.dateClosed) < Date.parse(p2.dateClosed));
+    const projects = projectContent.sort((p1, p2) => Date.parse(p1.dateClosed) > Date.parse(p2.dateClosed));
 
     if (!project) return <NotFoundPage />
 
@@ -17,6 +17,75 @@ const ProjectPage = (props) => {
 
     return (
         <>
+            <h2 style={{ width: '100%' }}>
+                <span className='highlight' style={{ fontSize: '3rem' }}>Portfolio</span> <br />
+                DXC Technology Pty Ltd<br />
+            </h2>
+            <div>
+                <p>
+                    During my time at DXC Technology, I gained invaluable experience as a full-stack developer, utilizing an array of technologies such as C#, .NET Framework, MS SQL, JavaScript, HTML, CSS, Bootstrap,
+                    and several JavaScript libraries. Not only did I sharpen my skills, but I also had the opportunity to apply them in real-world projects, recieving positive feedback for my proactive approach,
+                    problem-solving, initiative, high-quality work, and for going above and beyond my expectations and responsibilities.
+                    <br />
+                    <br />
+                    I also participated actively, in daily standup meetings, weekly project meetings, and requirements gathering sessions. I was even given the chance to showcase my work to key stakeholders and the APAC executive team,
+                    making it an unforgettable experience. One of the major highlights of the internship was the opportunity to redesign and implement a software architecture that improved the modularity, maintainability,
+                    performance, scalability, and usability of the project. My work was well-received by my colleagues and bosses, as it provided a clear strategy and prototype for improving the project's success and user experience.
+                    <br />
+                    <br />
+                    Through this internship, I was able to make a significant impact on the project, doubling the average lines per day for a Junior Developer and working on many new features and enhancements.
+                    I am proud to showcase my portfolio of work and am honored to have had the opportunity to work with such a talented team and grateful for the valuable experience I gained.
+                </p>
+                <p>
+                    <br/>
+                    NOTE: You are using the pdf version of this portfolio.  <br/>A web version is available here:
+                    <a href='https://douglashwalker.github.io' className='accent' style={{marginLeft: '8px'}}>douglashwalker@github.io</a>
+
+                </p>
+            </div>
+            <h2 className='highlight' style={{ marginLeft: '25%', fontSize: '1.5rem', textAlign: 'center', marginBottom: '0px' }}>Quick Stats</h2>
+            <div style={{ width: '100%', justifyContent: 'center', display: 'flex', marginTop: '8px' }}>
+                <table style={{ width: '50%', minWidth: '300px' }}>
+                    <tbody>
+                    <tr>
+                        <th>Total Items Closed</th>
+                        <td>{projects.length}</td>
+                    </tr>
+                    <tr>
+                        <th>Lines Added</th>
+                        <td>10696</td>
+                    </tr>
+                    <tr>
+                        <th>Lines Deleted</th>
+                        <td>7103</td>
+                    </tr>
+                    <tr>
+                        <th>Daily LoC</th>
+                        <td>{Math.round((10696 + 7103) / Math.round(((Math.max(...projects.map(p => new Date(p.dateClosed))) - Math.min(...projects.map(p => new Date(p.dateClosed)))) / (1000 * 60 * 60 * 24)) * 0.7142857))}</td>
+                    </tr>
+                    <tr>
+                        <th>Avg. LoC for Junior</th>
+                        <td>{100}</td>
+                    </tr>
+                    <tr>
+                        <th>Enhancements</th>
+                        <td>{projects.filter(p => p.labels.some((e) => e == "Enhancement")).length}</td>
+                    </tr>
+                    <tr>
+                        <th>Bugs</th>
+                        <td>{projects.filter(p => p.labels.some((e) => e == "Bug")).length}</td>
+                    </tr>
+                    <tr>
+                        <th>Value Points</th>
+                        <td>{projects.reduce((acc, p) => acc + p.valuePoints, 0)}</td>
+                        </tr>
+                        </tbody>
+                </table>
+                {/* <p>Total days in team: {Math.round((Math.max(...projects.map(p => new Date(p.dateClosed))) - Math.min(...projects.map(p => new Date(p.dateClosed)))) / (1000 * 60 * 60 * 24))}</p><br/> */}
+            </div>
+            {/* <h2 style={{ width: '100%', fontSize: '1.5rem', marginBottom: '0' }}>
+                <span className='highlight' style={{ fontSize: '1.5rem', textAlign: 'center' }}>Development Work</span> 
+            </h2> */}
             <div className="steps">
                 {projects.map((project, key) => (
                     <div key={key} className="steps-container">
@@ -27,7 +96,7 @@ const ProjectPage = (props) => {
                             ))}
                             <br />
                             <br />
-                            
+
                             <h3 style={{ display: (project.highlights) ? '' : 'none' }}>Highlights</h3>
                             <ul style={{ display: (project.highlights) ? '' : 'none' }}>
                                 {project?.highlights?.map((item, index) => (
@@ -50,7 +119,7 @@ const ProjectPage = (props) => {
                             </ul>
 
                             <br style={{ display: (project.highlights && project.requirements && project.solution && project.image) ? '' : 'none' }} />
-                            
+
                             <img src={project.image} style={{ maxWidth: "100%", display: (project.image) ? '' : 'none' }} />
                             <br style={{ display: (project.image) ? '' : 'none' }} />
                             <br style={{ display: (project.image) ? '' : 'none' }} />

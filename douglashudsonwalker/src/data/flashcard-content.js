@@ -1660,6 +1660,60 @@ const flashcards
             "prompt": "<p>AWS Outposts</p>",
             "answer": "<p>Installs a fully operational min-Region inside your own datacenter. It is owned and operated by AWS but is isolated within your own building.</p>",
             "promptType": "Define"
+        },
+        {
+            "certificate": "Docker Certified Associate",
+            "section": "Domain 01: Orchestration",
+            "module": "Commands",
+            "topic": "Setup Swarm Cluster with Managers",
+            "prompt": "<p>Create a new Swarm</p>",
+            "answer": "<p class='code'>$ docker swarm init --advertise-addr <MANAGER-IP>.</p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Docker Certified Associate",
+            "section": "Domain 01: Orchestration",
+            "module": "Commands",
+            "topic": "Setup Swarm Cluster with Managers",
+            "prompt": "<p>What does the --advertise-addr flag do?</p>",
+            "answer": "<p>It configures the swarm so that the manager node publishes its address as the given ip address. The other nodes int he swarm must be able to access the manager at that IP address. </p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Docker Certified Associate",
+            "section": "Domain 01: Orchestration",
+            "module": "Commands",
+            "topic": "Setup Swarm Cluster with Managers",
+            "prompt": "<p>Command to view the current state of the swarm?</p>",
+            "answer": "<p class='code'>docker info</p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Docker Certified Associate",
+            "section": "Domain 01: Orchestration",
+            "module": "Commands",
+            "topic": "Setup Swarm Cluster with Managers",
+            "prompt": "<p>Command to view information about nodes?</p>",
+            "answer": "<p class='code'>docker node ls</p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Docker Certified Associate",
+            "section": "Domain 01: Orchestration",
+            "module": "Commands",
+            "topic": "Setup Swarm Cluster with Managers",
+            "prompt": "<p>Add node to a swarm</p>",
+            "answer": "<p class='code'>$ docker swarm join --token <TOKEN-PROVIDED-BY-MASTER-INIT></p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Docker Certified Associate",
+            "section": "Domain 01: Orchestration",
+            "module": "Commands",
+            "topic": "Setup Swarm Cluster with Managers",
+            "prompt": "<p>How to retieve the join command token?</p>",
+            "answer": "<p class='code'>docker swarm join-token worker</p>",
+            "promptType": "Define"
         }
     ];
 

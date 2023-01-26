@@ -1,3 +1,13 @@
+td {
+  font-size: larger;
+  text-align: left;
+}
+
+th {
+  font-size: large;
+  text-align: left;
+}
+
 .steps {
     position: relative;
     margin-top: 32px;

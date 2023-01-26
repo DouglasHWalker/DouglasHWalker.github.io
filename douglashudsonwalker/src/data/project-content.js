@@ -1,5 +1,249 @@
 const projects = [
     {
+        id: 1018,
+        title: 'Resolve Redirect Issue',
+        summary: [
+            'Helped a collegue fix a navigation issue with a difficult bug. The issue was caused by legacy session variables that were present for some users but not others. If you were a regular user, the issue was not present. the bug was therefore diffcult to recreate. I was able to identify that this was the cause of the issue and run tests to confirm. To resolve the legachy session variables were replace.',
+        ],
+        tagline: [
+            'Team member having difficulty with bug.',
+        ],
+        requirements: [],
+        solution: [
+        ],
+        technologies: ["C#"],
+        dateOpened: 'Dec 20',
+        dateClosed: 'Dec 20',
+        labels: [
+            'Bug',
+        ],
+        additions: 8,
+        deletions: 57,
+        complexity: 3,
+        valuePoints: 5,
+    },
+    {
+        id: 1026,
+        title: 'Refactor Field Names',
+        summary: [
+            'Change field names so they are consistant acrosse site.',
+        ],
+        tagline: [
+            'Change field names so they are consistant acrosse site.',
+        ],
+        requirements: [],
+        solution: [
+        ],
+        technologies: ["C#"],
+        dateOpened: 'Dec 15',
+        dateClosed: 'Dec 15',
+        labels: [
+            'Enhancement',
+        ],
+        additions: 15,
+        deletions: 15,
+        complexity: 1,
+        valuePoints: 1,
+    },
+    {
+        id: 1017,
+        title: 'Create Reusable Control',
+        summary: [
+            'Created a page element that can be resused as a navigation bar for several pages within the platform. Users were experiencing some navigation issues which prompted this git issue. I used this opportunity to create the reusable control and update several pages so that future expansion of the section is easier.',
+        ],
+        tagline: [
+            'Reusuable Naviagation Element to improve Future Development',
+        ],
+        requirements: [],
+        solution: [],
+        technologies: ["C#", "JavaScript", "HTML", "CSS"],
+        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The Control
+        dateOpened: 'Dec 15',
+        dateClosed: 'Dec 15',
+        labels: [
+            'Enhancement',
+        ],
+        additions: 287,
+        deletions: 311,
+        complexity: 2,
+        valuePoints: 5,
+    },
+    {
+        id: 877,
+        title: 'Update Legacy Data',
+        summary: [
+            'Create an SQL query that updates legacy and inconsistent data to new values. Ensure important data is not lost.',
+        ],
+        tagline: [
+            'Update old data to the newest versions',
+        ],
+        requirements: [],
+        solution: [],
+        technologies: ["SQL",],
+        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The query
+        dateOpened: 'Dec 5',
+        dateClosed: 'Dec 10',
+        labels: [
+            'Enhancement',
+        ],
+        additions: 32,
+        deletions: 0,
+        complexity: 2,
+        valuePoints: 2,
+    },
+    {
+        id: 928,
+        title: 'Remove and Hide Production Element',
+        summary: [
+            'Legacy assets catalogue was no longer needed. I unpublished the catalogue from production and moved existing items to appropriate locations.',
+        ],
+        tagline: [
+            'Remove the Catalogue called "Legacy Assets"',
+        ],
+        requirements: [''],
+        solution: [],
+        technologies: ["SQL"],
+        dateOpened: 'Dec 8',
+        dateClosed: 'Dec 11',
+        labels: [
+            'Enhancement',
+        ],
+        additions: 12,
+        deletions: 0,
+        complexity: 1,
+        valuePoints: 1,
+    },
+    {
+        id: 893,
+        title: 'Issues with Item Children',
+        summary: [
+            'There is a bug that prevents items that have no added children from being tracked. The resolution was to automatically create at least one child item when creating a new item. This resolved the issue and we were able to remove some redundant code.',
+        ],
+        tagline: [
+            'Items without children cannot be tracked for progress.',
+        ],
+        requirements: [''],
+        solution: [],
+        technologies: ["C#", "JavaScript", "SQL"],
+        dateOpened: 'Nov 16',
+        dateClosed: 'Dec 8',
+        labels: [
+            'Bug',
+        ],
+        additions: 19,
+        deletions: 134,
+        complexity: 2,
+        valuePoints: 2,
+    },
+    {
+        id: 1000,
+        title: 'Item Management Triage',
+        summary: [
+            'Create a new Page for triaging and prioritising asset publishing. The functionlity promotes data quality by restricting the publishing of assets to a select group within each team. All team members can an asset for review, but only the trained administrators can publish the asset for public consumption.',
+        ],
+        tagline: [
+            'Promote data quality through publishing restrictions.',
+        ],
+        requirements: [
+            'Each team requires 2 levels of access. Administrator and Member',
+            'Administrators can add people to the team and set the access level of the teams members.',
+            'Administrators can also Triage assets in the teams catalogue.',
+            'Create a new page that allows administrators to perform this asset publishing triage.',
+            'When publishing an asset, an administrator is presented with a checklist to evaluate the assets quality.',
+            'Only when all the checkboxes are checked can an asset be published.',
+            'The administrator has the option to send the asset back to the creator with a reason (selected from a dropdown) and a text comment explaining why it needs changes.',
+            'Having completed the checklist, when the admin clicks publish, they are presented with another modal that prompts for the catalogue, and the asset status.',
+            'Provde explainations for the various statuses via a tooltip',
+            'The comment for a ineligible asset is mandatory to provide',
+            'Surface the comment and the publishing status in the relevant screens',
+            'The creator of the asset can only submit it when all the mandatory fields have been filled.',
+            'As part of this enhancement, serveral field will need to be set as mandatory.',
+            'The creator should get feedback for why their asset cannot be submitted.',
+            'The new publishing statuses are to be changes to "Yes", "No", "Submitted for Review", and "Changes Requested". Remove the other database columns for managing publish status and update the exisiting data.',
+            'Hide team management tabs from the non-admin users.',
+            'Create the database querys and updates, test them and provide them in the git branch so that the chagnes can be made to production.',
+        ],
+        solution: [],
+        technologies: ["C#", "JavaScript", "SQL", "HTML", "CSS"],
+        image: 'require("../images/triage.gif")',
+        dateOpened: 'Dec 1',
+        dateClosed: 'Dec 8',
+        labels: [
+            'Enhancement',
+        ],
+        additions: 1419,
+        deletions: 914,
+        complexity: 4,
+        valuePoints: 20,
+    },
+    {
+        id: 1004,
+        title: 'Update User Access Controls',
+        summary: [
+            'Update user access control to certain pages to allow additional regions to access functionality. Took the opportunity to improve the functions underlying the feature. Was able make it more reusable across pages.',
+        ],
+        tagline: [
+            'Allow APAC region access to management pages.',
+        ],
+        requirements: [],
+        solution: [
+        ],
+        technologies: ["C#"],
+        dateOpened: 'Dec 8',
+        dateClosed: 'Dec 8',
+        labels: [
+            'Enhancement',
+        ],
+        additions: 37,
+        deletions: 10,
+        complexity: 2,
+        valuePoints: 2,
+    },
+    {
+        id: 912,
+        title: 'Add Filter and Set Default View',
+        summary: [
+            'Add a filter to a table view page that uses data from a seperate but related table in the database. Additionally, set the defualt for the page to collapse the items to shorthand versions with a button that toggles between long and short form.',
+        ],
+        tagline: [
+            'Filter for seperate table and collapse view by default',
+        ],
+        requirements: [],
+        solution: [],
+        technologies: ["C#", "HTML", "CSS", "JavaScript"],
+        dateOpened: 'Dec 3',
+        dateClosed: 'Dec 7',
+        labels: [
+            'Enhancement',
+        ],
+        additions: 31,
+        deletions: 11,
+        complexity: 2,
+        valuePoints: 2,
+    },
+    {
+        id: 978,
+        title: 'Add Navigation and Styling',
+        summary: [
+            'Create a navigation link for each row of a table that takes the id of the row and uses it to determine the data for the next page. Fix up some styling issues with table width for some devices on these pages.',
+        ],
+        tagline: [
+            'Parameter based URL navigation and CSS styling',
+        ],
+        requirements: [],
+        solution: [ ],
+        technologies: ["C#", "HTML", "CSS", "JavaScript"],
+        dateOpened: 'Nov 28',
+        dateClosed: 'Dec 3',
+        labels: [
+            'Enhancement',
+        ],
+        additions: 2,
+        deletions: 2,
+        complexity: 1,
+        valuePoints: 1,
+    },
+    {
         id: 976,
         title: 'Refactor Play to Asset across the tool',
         summary: [
@@ -12,7 +256,6 @@ const projects = [
         solution: [
         ],
         technologies: ["Visual Studio"],
-        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The before and after
         dateOpened: 'Dec 1',
         dateClosed: 'Dec 3',
         labels: [
@@ -36,7 +279,7 @@ const projects = [
         solution: [
         ],
         technologies: ["C#", "SQL", "HTML", "CSS", "JavaScript"],
-        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The before and after
+        // image: 'require("../images/roadmap.gif")', UINCLUDE IMAGE - Downloads.png
         dateOpened: 'Dec 1',
         dateClosed: 'Dec 3',
         labels: [
@@ -84,7 +327,7 @@ const projects = [
         solution: [
         ],
         technologies: ["C#"],
-        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The query
+        // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Nov 30',
         dateClosed: 'Nov 30',
         labels: [
@@ -108,7 +351,7 @@ const projects = [
         solution: [
         ],
         technologies: ["C#", "SQL", "HTML", "CSS", "JavaScript"],
-        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - One of the pages
+        image: 'require("../images/teams.png")',
         dateOpened: 'Nov 25',
         dateClosed: 'Nov 28',
         labels: [
@@ -132,7 +375,7 @@ const projects = [
         solution: [
         ],
         technologies: ["SQL"],
-        // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The query
+        image: 'require("../images/bulk_status.png")',
         dateOpened: 'Oct 17',
         dateClosed: 'Oct 21',
         labels: [
@@ -155,7 +398,7 @@ const projects = [
         requirements: [],
         solution: [
         ],
-        technologies: ["JavaScript", "C#", "SQL", "HTML", "CSS"],
+        technologies: ["SQL"],
         // image: 'require("../images/roadmap.gif")', INCLUDE IMAGE - The query
         dateOpened: 'Nov 1',
         dateClosed: 'Nov 3',
@@ -206,7 +449,6 @@ const projects = [
         requirements: [],
         solution: [],
         technologies: ["C#", "CSS", "C#", "JavaScript"],
-        // image: 'require("../images/roadmap.gif")', 
         dateOpened: 'Nov 24',
         dateClosed: 'Nov 24',
         labels: [
@@ -313,7 +555,8 @@ const projects = [
         id: 861,
         title: 'Collection Filter for Trello View',
         summary: [
-            'Items in the Trello View need to be filtered by the technologies they have avaliable. Each item has a list of technologies it has deployed. Each item list needs to be filtered against the selected technology filter or search query. This was acheived using several JavaScript functions that map the technologies and compare values using dictionary matching. Additionally, publish status filters were added, along with export functions and improvements to null handling in filters.',
+            'this feature allows users to filter items in the Trello View by the technologies they have available. Each item in the view has a list of technologies it has deployed, and users can filter the items by selecting a specific technology or by searching for a specific technology.'
+            + '\n\nTo achieve this feature, we used several JavaScript functions that map the technologies and compare values using dictionary matching. This allows users to quickly and easily filter the items in the view by the technologies they have available. Additionally, we added filters for publish status, along with export functions, and made improvements to null handling in filters.'
         ],
         tagline: [
             'Filter for Item with List',
@@ -658,7 +901,7 @@ const projects = [
         ],
         requirements: [],
         solution: [],
-        technologies: ["JavaScript", "HTML","C#"],
+        technologies: ["JavaScript", "HTML", "C#"],
         // image: 'require("../images/roadmap.gif")',
         dateOpened: 'Sep 15',
         dateClosed: 'Sep 16',
@@ -966,7 +1209,7 @@ const projects = [
         id: 351,
         title: 'Build Delete Functionality for sequential data.',
         summary: [
-            'One of the first significant tasks given in the internship. Add a button to a page modal that allows users to delete a step and sub-step from a list of steps and sub-steps.',
+            'One of the first large tasks assigned. The goal of this task was to add a button to a page modal that allows users to delete a step and sub-step from a list of steps and sub-steps.',
         ],
         tagline: [
             'Add delete functionality for sequence.',
@@ -1028,22 +1271,16 @@ const projects = [
         id: 417,
         title: 'Survey Response Calculation Bug',
         summary: [
-            'The first task given in the internship. Resolve a bug picked up by the platforms exception tracker. A guard against zero values was throwing an exception where is was not needed.',
+            'This was the first task I was assigned. This bug was picked up by the platform\'s exception tracker. The bug occurred when users attempted to access or manage surveys that had a number of questions, but no associated responses.',
         ],
         tagline: [
             'Resolve a malconfigured guard against zero.',
         ],
         requirements: [
-            'Cross reference the error message provided, find the page and module that the bug occured in.',
-            'Determine source of the error by debugging the application',
-            'Resolve'
+            'To resolve the bug, I had to cross-reference the error message provided, find the page and module where the bug occurred, and determine the source of the error by debugging the application. The issue was caused by malconfigured guards against zero values, which were throwing an exception where it was not needed.',
         ],
         solution: [
-            'Exception thrown when users attempted to access or manage surveys that had a number of questions, but no associated responses',
-            'The issue was caused malconfigured guards against zero',
-            'Solution was to change the guards so that zero values were allowed. Tests ensured no divide by zero errors would occur.',
-            'Changes tested against requirements of application and confirmed with tech lead.',
-            'Additional changes: removed a repeated method',
+            'The solution was to change the guards so that zero values were allowed. I also ran tests to ensure that there would be no divide by zero errors. The changes were tested against the requirements of the application and confirmed with the tech lead. Additionally, I removed a repeated method.',
         ],
         highlights: [
             'First contribution to the project and team.'
@@ -1064,27 +1301,30 @@ const projects = [
         id: 584,
         title: 'KanBan Board View',
         summary: [
-            'A Trello style KanBan board for presenting business data. The view enables stakeholders to discuss and identify painpoints across multiple datapoints and export the discussion and findings for further presentation and analysis.'
-            + 'It has enabled customers to understand their performance within the program. It has enabled informed decision making, prioritisation and optimisation of delivery for the company globally.',
+            'This tool allows business stakeholders to easily view and discuss important data in a Trello-style format. It allows teams to identify pain points, prioritize new initiatives, and optimize delivery globally. It enables customers to understand their performance within the program and make informed decisions.',
         ],
         tagline: [
             'Create a custom Trello style KanBan board for understanding business data.',
         ],
         requirements: [
-            'Rearrange the information architecture for presenting navigation options to the view.',
-            'Protect against SQL injection and allow access only for specific users.',
-            'Build or reuse databse queries for retrieving relevant data items.',
-            'Work with users to determine relevant data items.',
-            'Populate data dynamically into a board view simlar to Trello',
-            'Each card in the board should be placed into the related column, and be grouped on datapoint X',
-            'Enable search functionality that hides cards that are not relevant to query',
-            'Handle null data points in the frontend',
-            'Add buttons for filtering cards using checkboxes (multi-filters)',
-            'Dynamically update a counter (with filtering) for multiple data values and display on screen for review',
-            'Add actions within the cards to update values and redirect the user',
-            'Ability to export the data (inc. filters) to a spreadsheet and pdf for presentation and analysis'
+            'The ability to gain insight into business performance and operations',
+            'The ability to prioritize new initiatives and optimize delivery globally',
+            'The ability to discuss and identify pain points across multiple data points',
+            'The ability to export discussions and findings for further presentation and analysis',
         ],
         solution: [
+            'Design and Implement a user interface based on feedback from stakeholders',
+            'Work with users to determine relevant data items',
+            'Build or reuse database queries to retrieve relevant data items',
+            'Populate data dynamically into a board view similar to Trello',
+            'Sort data into a nested rows and columns structure based on their values and attributes',
+            'Add search functionality to hide irrelevant cards',
+            'Handle null data points in the frontend',
+            'Add filtering buttons that utilise checkboxes for multi-selection',
+            'Dynamically update a counter that displays the number of card/data-points in view',
+            'Add actions within the cards to update values and redirect the user',
+            'Ability to export data (including filters) to a spreadsheet or pdf for presentation and analysis',
+            'Perform access control limitation, and ensure only specific users can access the dashboard',
         ],
         highlights: [
             'Allows the business to gain insight into their performance and operation. Has enabled the prioritisation of new initiatives and the optimisation of delivery globally. Enables teams to discuss and identify painpoints across a multitude of datapoints and export the discussion and findings for presentation and analysis.'
@@ -1163,7 +1403,6 @@ const projects = [
             'On completion the feature significantly improved user experience, allowing them to complete a task in 3 actions rather than 2n actions, where n is the number of steps.'
         ],
         technologies: ["Javascript", "SQL", "C#"],
-        image: "",
         dateOpened: '11th Oct',
         dateClosed: 'Oct 20',
         labels: [
