@@ -37,10 +37,10 @@ const ProjectPage = (props) => {
                     I am proud to showcase my portfolio of work and am honored to have had the opportunity to work with such a talented team and grateful for the valuable experience I gained.
                 </p>
                 <p>
-                    <br/>
+                    {/* <br/>
                     NOTE: You are using the pdf version of this portfolio. The web version will allow you to view the animated versions of each image.  It is available here:
                     <a href='https://douglashwalker.github.io' className='accent' style={{ marginLeft: '8px' }}>douglashwalker@github.io</a>
-                    <br />
+                    <br /> */}
                     <br />
                     IMPORTANT: If any image is too small in the pdf, resize your pdf viewer so that the image is larger (all images are good resolutions).
                     If the images are too small in the webview, right click the image and open it in a new tab.
