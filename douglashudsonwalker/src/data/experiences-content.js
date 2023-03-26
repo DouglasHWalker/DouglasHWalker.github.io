@@ -48,7 +48,7 @@ const experiences = [
     },
     {
         id: 2,
-        tabTitle: 'UniSA',
+        tabTitle: 'ARC-IVE',
         title: 'Developer, Research Assistant',
         company: 'Research Center for Interactive Virtual Environements',
         date: '2021 - present',
@@ -101,6 +101,34 @@ const experiences = [
             'Fast-paced sales environment, working double shifts on feet, managing team of five, multi-tasking stock, sales, site construction and maintenance.',
         ],
         tech: []
+    },
+    {
+        id: 5,
+        tabTitle: 'Bch. Sft Eng',
+        title: 'Bachelor of Software Engineering (Honours)',
+        company: 'University of Melbourne',
+        date: '2020 - 2023',
+        content: [
+            'Majored in Artificial Intelligence, Security, and Distributed systems (Concurrency)',
+            "Top 5% of cohort (Every Year) - Chancellor's Letters of Commendation List",
+            "Studied final year courses (post-graduate) at The University of Melbourne - Highest ranked university in Australia for Computer Science",
+            "Cumulative GPA: 6.9/7.0 - lost marks in Artificial Intelligence (my favourite subject) "
+        ],
+        tech: ['Human Computer Interaction', 'Data Structures', 'Software Design', 'C++', 'Design Patterns', 'CI/CD', 'Networking', 'Machine Learning', 'Reinforcement Learning', 'Natural Language Processing',
+            'Discrete Mathematics', 'Calculus', 'CIA Triad', 'Encryption', 'Red vs. Blue', 'Enterprise Databases', 'Cloud', 'Big Data', 'Data Wrangling', 'Data Science',
+            'ITIL Practices', ]
+    },
+    {
+        id: 6,
+        tabTitle: 'Dip. Sft Dev',
+        title: 'Diploma of Software Development',
+        company: 'TAFESA',
+        date: '2019 - 2020',
+        content: [
+            'Practical/Industry focused courses - Mobile Development, Web Development, Agile Methodologies',
+            "Secured lecturer position in final year, presenting and supervising subjects to new students."
+        ],
+        tech: ['Android Studio', 'XCode', 'C#', 'Xamarin', 'Git', 'JavaScript' ]
     }
 ]
 
