@@ -269,6 +269,10 @@ button, .contact {
   width: 32%;
 }
 
+.code {
+  font-family: 'SF Mono', 'Courier New', Courier, monospace;
+}
+
 .list_item_content {
   display: flex;
   flex-direction: column;

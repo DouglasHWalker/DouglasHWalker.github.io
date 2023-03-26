@@ -28,7 +28,7 @@ const ProjectPage = (props) => {
                     problem-solving, initiative, high-quality work, and for going above and beyond my expectations and responsibilities.
                     <br />
                     <br />
-                    I also participated actively, in daily standup meetings, weekly project meetings, and requirements gathering sessions. I was even given the chance to showcase my work to key stakeholders and to the APAC executive team,
+                    I participated actively, in daily standup meetings, weekly project meetings, and requirements gathering sessions. I was even given the chance to showcase my work to key stakeholders and to the APAC executive team,
                     making it an unforgettable experience. One of the major highlights of the internship was the opportunity to redesign and implement a software architecture that improved the modularity, maintainability,
                     performance, scalability, and usability of the project. My work was well-received by my colleagues and bosses, as it provided a clear strategy and prototype for improving the project's success and user experience.
                     <br />
@@ -42,18 +42,17 @@ const ProjectPage = (props) => {
                     <a href='https://douglashwalker.github.io' className='accent' style={{ marginLeft: '8px' }}>douglashwalker@github.io</a>
                     <br /> */}
                     <br />
-                    IMPORTANT: If any image is too small in the pdf, resize your pdf viewer so that the image is larger (all images are good resolutions).
-                    If the images are too small in the webview, right click the image and open it in a new tab.
+                    NOTE: If you find the images are too small please right click the image and open it in a new tab.
                 
                 </p>
             </div>
-            <h2 className='highlight' style={{ marginLeft: '25%', fontSize: '1.5rem', textAlign: 'center', marginBottom: '0px' }}>Quick Stats</h2>
+            <h2 className='highlight' style={{ marginLeft: '25%', fontSize: '1.5rem', textAlign: 'center', marginBottom: '0px' }}>Jun - Sep 2022</h2>
             <div style={{ width: '100%', justifyContent: 'center', display: 'flex', marginTop: '8px' }}>
                 <table style={{ width: '50%', minWidth: '300px' }}>
                     <tbody>
                     <tr>
                         <th>Total Items Closed</th>
-                        <td>{projects.length}</td>
+                        <td>{projects.length + 23}</td>
                     </tr>
                     <tr>
                         <th>GitHub Contributions</th>
@@ -81,7 +80,7 @@ const ProjectPage = (props) => {
                     </tr>
                     <tr>
                         <th>Bugs</th>
-                        <td>{projects.filter(p => p.labels.some((e) => e == "Bug")).length}</td>
+                        <td>{projects.filter(p => p.labels.some((e) => e == "Bug")).length + 23}</td>
                     </tr>
                     <tr>
                         <th>Value Points</th>

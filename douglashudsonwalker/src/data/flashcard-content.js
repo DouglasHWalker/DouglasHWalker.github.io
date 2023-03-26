@@ -1714,6 +1714,249 @@ const flashcards
             "prompt": "<p>How to retieve the join command token?</p>",
             "answer": "<p class='code'>docker swarm join-token worker</p>",
             "promptType": "Define"
+        },
+        // FRENCH
+        {
+            "certificate": "Beginners French",
+            "section": "Comment se saluer et se présenter",
+            "module": "Comment se saluer et se présenter",
+            "topic": "Vocabulaire: Présentations familières/formelles",
+            "prompt": "<p>You want to ask someone how she is doing?</p>",
+            "answer": "<p>Comment ça va?</p>",
+            "promptType": "Vocabulaire"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Module 01 - Bonjour!",
+            "module": "Comment se saluer et se présenter",
+            "topic": "Vocabulaire: Présentations familières/formelles",
+            "prompt": "<p>You are please to meet someone?</p>",
+            "answer": "<p>Enchanté(e)</p>",
+            "promptType": "Vocabulaire"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Comment se saluer et se présenter",
+            "module": "Comment se saluer et se présenter",
+            "topic": "Vocabulaire: Présentations familières/formelles",
+            "prompt": "<p>You are not doing well?</p>",
+            "answer": "<p>Ça ne va pas</p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Comment se saluer et se présenter",
+            "module": "Comment se saluer et se présenter",
+            "topic": "Vocabulaire: Présentations familières/formelles",
+            "prompt": "<p>You want to say Hello.</p>",
+            "answer": "<p>Bonjour</p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Module 01 - Bonjour!",
+            "module": "Comment se saluer et se présenter",
+            "topic": "Vocabulaire: Présentations familières/formelles",
+            "prompt": "<p>You want to say goodbye.</p>",
+            "answer": "<p>Au revoir</p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Module 01 - Bonjour!",
+            "module": "Comment se saluer et se présenter",
+            "topic": "Vocabulaire: Présentations familières/formelles",
+            "prompt": "<p>You want to wish someone a good day?</p>",
+            "answer": "<p>Bonne Journée</p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Module 01 - Bonjour!",
+            "module": "Comment se saluer et se présenter",
+            "topic": "Vocabulaire: Présentations familières/formelles",
+            "prompt": "<p>You want to say where you are from?</p>",
+            "answer": "<p>Je suis de...</p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Module 01 - Bonjour!",
+            "module": "Comment se saluer et se présenter",
+            "topic": "Vocabulaire: Présentations familières/formelles",
+            "prompt": "<p>You want to give your name?</p>",
+            "answer": "<p>Je m'appelle...</p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Module 01 - Bonjour!",
+            "module": "Comment se saluer et se présenter",
+            "topic": "Vocabulaire: Présentations familières/formelles",
+            "prompt": "<p>Salut, Lise. Ca va?</p>",
+            "answer": "<p>Ça va bein. Et toi?</p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Module 01 - Bonjour!",
+            "module": "Comment se saluer et se présenter",
+            "topic": "Vocabulaire: Présentations familières/formelles",
+            "prompt": "<p>Je m'appelle Jérôme. Et toi?</p>",
+            "answer": "<p>Je m'appelle Douglas.</p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Module 01 - Bonjour!",
+            "module": "Comment se saluer et se présenter",
+            "topic": "Structure: Tu et vous",
+            "prompt": "<p>Monsieur Pujol is the director of Students with a Future, a large international company. To greet him, Christine says</p>",
+            "answer": "<p>Bonjour, Monsieur Pujol. Christine Béart. Comment allez-vous?/p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Module 01 - Bonjour!",
+            "module": "Comment se saluer et se présenter",
+            "topic": "Structure: Tu et vous",
+            "prompt": "<p>Monsieur Pujol introduces Christine to the company's sales manager. He says</p>",
+            "answer": "<p>Mademoiselle Béart, je vous présente Madame Dabadi./p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Module 01 - Bonjour!",
+            "module": "Comment se saluer et se présenter",
+            "topic": "Structure: Tu et vous",
+            "prompt": "<p>Christine bumps into an old friend from high school, Emmanuel Peugeot.</p>",
+            "answer": "<p>Salut, Emmanuel! Ça va?/p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Module 01 - Bonjour!",
+            "module": "Identification des choses et des personnes",
+            "topic": "Vocabulaire: La salle de classe",
+            "prompt": "<p>Une horloge</p>",
+            "answer": "<p>A Clock/p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Module 01 - Bonjour!",
+            "module": "Identification des choses et des personnes",
+            "topic": "Vocabulaire: La salle de classe",
+            "prompt": "<p>Une horloge</p>",
+            "answer": "<p>A Clock/p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Module 01 - Bonjour!",
+            "module": "Identification des choses et des personnes",
+            "topic": "Vocabulaire: La salle de classe",
+            "prompt": "<p>Un sac à dos</p>",
+            "answer": "<p>A Backpack/p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Module 01 - Bonjour!",
+            "module": "Identification des choses et des personnes",
+            "topic": "Vocabulaire: La salle de classe",
+            "prompt": "<p>Un stylo</p>",
+            "answer": "<p>A pen/p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Module 01 - Bonjour!",
+            "module": "Identification des choses et des personnes",
+            "topic": "Vocabulaire: La salle de classe",
+            "prompt": "<p>Gender of stylo</p>",
+            "answer": "<p>Masculine/p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Module 01 - Bonjour!",
+            "module": "Identification des choses et des personnes",
+            "topic": "Vocabulaire: La salle de classe",
+            "prompt": "<p>C'est un classeur</p>",
+            "answer": "<p>It's a folder/p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Beginners French",
+            "section": "Module 01 - Bonjour!",
+            "module": "Identification des choses et des personnes",
+            "topic": "Quelques Français célèbres",
+            "prompt": "<p>C'est un classeur</p>",
+            "answer": "<p>It's a folder/p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Programming",
+            "section": "Data Structures",
+            "module": "Linked Lists",
+            "topic": "Merge Two Sorted Linked Lists",
+            "prompt": "<p>Write the pseudo code for merging two singly linked lists. The function will take two parameters (node1, node2)</p>",
+            "answer":`<pre><div class="code">
+// Base - if not node, return other
+if (node1 is empty) return node2
+if (node2 is empty) return node1
+// compare, recurse
+if node1.value <= node2.value:
+    node1.next = merge(node1.next, node2)
+    return node1
+else:
+    node2.next = merge(node1, node2.next)
+    return node2
+            </div></pre>`,
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Programming",
+            "section": "Data Structures",
+            "module": "Linked Lists",
+            "topic": "Detect Cycle in Linked List",
+            "prompt": "<p>Write space optimised pseudo code for detecting a cycle in a linked list, return the node where the cycle occurs. function(head)</p>",
+            "answer":`<pre><div class="code">
+// Floyd's Cycle
+slow = fast = head
+while fast and fast.next:
+    fast = fast.next.next
+    slow = slow.next
+    if(slow == fast):
+        break
+if not fast or not fast.next: return None
+fast = head
+while fast != slow:
+    fast = fast.next
+    slow = slow.next
+return fast
+            </div></pre>`,
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Programming",
+            "section": "Data Structures",
+            "module": "Linked Lists",
+            "topic": "Detect Cycle in Linked List",
+            "prompt": "<p>Write runtime-optimised pseudo code for detecting a cycle in a linked list, return the node where the cycle occurs. function(head)</p>",
+            "answer":`<pre><div class="code">
+// Hash map approach
+visited = {}
+curr = head
+
+while curr:
+    if curr in visited: return curr
+    visited[curr] = True
+    curr = curr.next
+return None
+            </div></pre>`,
+            "promptType": "Define"
         }
     ];
 

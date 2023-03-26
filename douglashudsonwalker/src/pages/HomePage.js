@@ -17,26 +17,28 @@ const HomePage = () => {
                 <div>
                     <h1>Douglas Hudson Walker</h1>
                     <h3>Application Developer at <span className='highlight'>DXC Technology</span></h3>
-                    <p>Building optimised, user-centric business solutions. Systems engineer and full-stack developer (MERN and ASP.NET).</p>
+                    <p>Software engineer and full-stack developer (MERN and ASP.NET).</p>
                 </div>
                 <div className='image-container'>
                     <img className='about-headshot' src={headshot} />
                 </div>
             </div>
-            {/* <div className='title' id="about"> */}
+            
+            <ProjectList projects={projectContent} />
+            <div className='' id="about">
             {/* <div> */}
             {/* <h1 className='hero-name'>Douglas Hudson Walker</h1>
                 <h2 className='tagline'>Software Engineer</h2> */}
             {/* A series of flipping taglines which describe all the things I do. */}
-            {/* </div>
-                <div> */}
-            {/* <p className='intro'>Douglas Hudson Walker is an Australian Software Engineer and Researcher. He earned his <span style={{ color: "var(--accent-color)" }}>Bachelor of Software Engineering</span> from the University of South Australia and completed his <span style={{ color: "var(--accent-color)" }}>postgraduate honours</span> at the University of Melbourne.</p>
-                <p className='intro'>He is an application developer at <span style={{ color: "var(--accent-color)" }}>DXC Technology</span>, and is a <span style={{ color: "var(--accent-color)" }}>research assistant</span> at the Research Center for Interactive Virtual Environments. He has experience designing, building, and deploying <span style={{ color: "var(--accent-color)" }}>production ready applications</span> and has helped to <span style={{ color: "var(--accent-color)" }}>optimise humanitarian crisis response, decipher news veracity, and personalise online education</span>.</p> */}
             {/* </div> */}
+                <div style={{fontSize: '1rem', padding: '0 100px'}}>
+                    <p className='intro'>Douglas Hudson Walker is an Australian Software Engineer. He earned his <span style={{ color: "var(--accent-color)" }}>Bachelor of Software Engineering (Honours)</span> cross-institutionally from the University of South Australia and the <span style={{ color: "var(--accent-color)" }}>University of Melbourne.</span></p>
+                    <p className='intro'>He is currently an <span style={{ color: "var(--accent-color)" }}>application developer</span> at DXC Technology, and a <span style={{ color: "var(--accent-color)" }}>research assistant</span> at the Research Center for Interactive Virtual Environments. </p>
+                    <p className='intro'>He has <span style={{ color: "var(--accent-color)" }}>full-stack experience</span> in every stage of the SDLC, designing, building, and deploying production ready applications in <span style={{ color: "var(--accent-color)" }}>cross-functional teams</span>. He has helped to optimise humanitarian crisis response, decipher news veracity, and individualise online education.</p>
+                </div>
             {/* <Link className='call-to-action-link' to="/about">See my Work!</Link> */}
             {/* <div className="down-arrow"><p></p></div> */}
-            {/* </div> */}
-            <ProjectList projects={projectContent} />
+            </div>
             <ExperiencePage id="experience" />
             <Flashcard flashcards={flashcardContent} />
             {/* <p className='quote' style={{ marginTop: "64px" }}>“Uncertainty is an uncomfortable position. But certainty is an absurd one." - <span style={{ fontWeight: "bold", color: "var(--accent-color)" }}>Voltaire.</span></p> */}
