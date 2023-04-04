@@ -9,7 +9,7 @@ const experiences = [
             'Specifically selected from large cohort to work full-time as an software engineer/programmer with the largest consulting firm in Australia.',
             'Key contributor in automation delivery team, building platforms for Fortune 500 clients to identify automation opportunities and optimise work processes.',
             'Responsible for the design and implementation of an automation assignment engine for clients based on their deployed technologies and capabilities.',
-            'Important member of team, involved in the development and design of agile tools to increase developer productivity.',
+            'Involved in the development and design of agile tools and workflows to increase team productivity.',
             'Serial bug squasher, closing a significant number of issues above and beyond expectation',
         ],
         tech: [
@@ -54,7 +54,7 @@ const experiences = [
         date: '2021 - present',
         content: [
             'Built agent capable of optimising strategies to maximise lives saved in simulation. Novel visualisation utilised D3 and TypeScript to generate actor-entity timelines. User-studies found the visualisation improved sense making for difficult questions by over 60%.',
-            'Collaborated with users and stakeholders from the Defence Science and Technology Group, gethering requirements and design specifications. <a href="https://www.dst.defence.gov.au." >https://www.dst.defence.gov.au.</a>',
+            'Collaborated with users and stakeholders from the Defence Science and Technology Group, gathering requirements and design specifications. <a href="https://www.dst.defence.gov.au." >https://www.dst.defence.gov.au.</a>',
             'Performed extensive literature reviews of state-of-the-art artificial intelligence techniques and implemented demonstrations for use in augmented reality headsets.',
             'Performed large user-studies and collated results for use in research publications.'
         ],
@@ -111,7 +111,7 @@ const experiences = [
         content: [
             'Majored in Artificial Intelligence, Security, and Distributed systems (Concurrency)',
             "Top 5% of cohort (Every Year) - Chancellor's Letters of Commendation List",
-            "Studied final year courses (post-graduate) at The University of Melbourne - Highest ranked university in Australia for Computer Science",
+            "Studied final year courses (post-graduate) at The University of Melbourne - Highest ranked in Australia for Computer Science",
             "Cumulative GPA: 6.9/7.0 - lost marks in Artificial Intelligence (my favourite subject) "
         ],
         tech: ['Human Computer Interaction', 'Data Structures', 'Software Design', 'C++', 'Design Patterns', 'CI/CD', 'Networking', 'Machine Learning', 'Reinforcement Learning', 'Natural Language Processing',
@@ -126,6 +126,7 @@ const experiences = [
         date: '2019 - 2020',
         content: [
             'Practical/Industry focused courses - Mobile Development, Web Development, Agile Methodologies',
+            'Mobile Application Development projects using Java, Swift, and Kotlin',
             "Secured lecturer position in final year, presenting and supervising subjects to new students."
         ],
         tech: ['Android Studio', 'XCode', 'C#', 'Xamarin', 'Git', 'JavaScript' ]

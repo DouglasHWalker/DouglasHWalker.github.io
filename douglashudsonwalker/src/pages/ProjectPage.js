@@ -9,7 +9,8 @@ import '../styles/ProjectPage.css';
 const ProjectPage = (props) => {
     const { id } = useParams();
     const project = projectContent.find(project => project.id == id);
-    const projects = projectContent.sort((p1, p2) => Date.parse(p1.dateClosed) > Date.parse(p2.dateClosed));
+    // const projects = projectContent.sort((p1, p2) => Date.parse(p1.dateClosed) > Date.parse(p2.dateClosed));
+    const projects = projectContent.sort((p1, p2) => p1.additions + p1.deletions < p2.additions + p2.deletions);
 
     if (!project) return <NotFoundPage />
 

@@ -1897,67 +1897,324 @@ const flashcards
             "promptType": "Define"
         },
         {
-            "certificate": "Programming",
-            "section": "Data Structures",
-            "module": "Linked Lists",
-            "topic": "Merge Two Sorted Linked Lists",
-            "prompt": "<p>Write the pseudo code for merging two singly linked lists. The function will take two parameters (node1, node2)</p>",
-            "answer":`<pre><div class="code">
-// Base - if not node, return other
-if (node1 is empty) return node2
-if (node2 is empty) return node1
-// compare, recurse
-if node1.value <= node2.value:
-    node1.next = merge(node1.next, node2)
-    return node1
-else:
-    node2.next = merge(node1, node2.next)
-    return node2
-            </div></pre>`,
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Definition and Basic Concepts",
+            "topic": "Definition",
+            "prompt": "<p>What is a Binary Search Tree?</p>",
+            "answer": "<p>A Binary Search Tree (BST) is a binary tree data structure where each node has at most two child nodes and each node's left child has a value less than its parent node's value, and each node's right child has a value greater than or equal to its parent node's value.</p>",
             "promptType": "Define"
         },
         {
-            "certificate": "Programming",
-            "section": "Data Structures",
-            "module": "Linked Lists",
-            "topic": "Detect Cycle in Linked List",
-            "prompt": "<p>Write space optimised pseudo code for detecting a cycle in a linked list, return the node where the cycle occurs. function(head)</p>",
-            "answer":`<pre><div class="code">
-// Floyd's Cycle
-slow = fast = head
-while fast and fast.next:
-    fast = fast.next.next
-    slow = slow.next
-    if(slow == fast):
-        break
-if not fast or not fast.next: return None
-fast = head
-while fast != slow:
-    fast = fast.next
-    slow = slow.next
-return fast
-            </div></pre>`,
-            "promptType": "Define"
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Definition and Basic Concepts",
+            "topic": "Definition",
+            "prompt": "<p>What are the basic operations performed on Binary Search Trees?</p>",
+            "answer": "<p>The basic operations performed on Binary Search Trees are insertion, deletion, and searching.</p>",
+            "promptType": "List"
         },
         {
-            "certificate": "Programming",
-            "section": "Data Structures",
-            "module": "Linked Lists",
-            "topic": "Detect Cycle in Linked List",
-            "prompt": "<p>Write runtime-optimised pseudo code for detecting a cycle in a linked list, return the node where the cycle occurs. function(head)</p>",
-            "answer":`<pre><div class="code">
-// Hash map approach
-visited = {}
-curr = head
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Definition and Basic Concepts",
+            "topic": "Definition",
+            "prompt": "<p>What is the advantage of using a Binary Search Tree?</p>",
+            "answer": "<p>The advantage of using a Binary Search Tree is that it allows for efficient searching, insertion, and deletion operations.</p>",
+            "promptType": "List"
+        },
+    
+        {
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Definition and Basic Concepts",
+            "topic": "Definition",
+            "prompt": "<p>What is the disadvantage of using an unbalanced Binary Search Tree?</p>",
+            "answer": "<p>The disadvantage of using an unbalanced Binary Search Tree is that its worst-case time complexity for searching, insertion, and deletion operations can be O(n), which is inefficient.</p>",
+            "promptType": "List"
+        },
+    
+        {
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Definition and Basic Concepts",
+            "topic": "Definition",
+            "prompt": "<p>What are some applications of Binary Search Trees?</p>",
+            "answer": "<p>Some applications of Binary Search Trees include searching algorithms, data compression, and data encryption.</p>",
+            "promptType": "List"
+        },
+        
+        {
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Traversal",
+            "topic": "Depth First Search",
+            "prompt": "<p>What are the three types of Depth-First Traversals used for Binary Search Trees?</p>",
+            "answer": "<p>The three types of Depth-First Traversals used for Binary Search Trees are Inorder Traversal, Preorder Traversal, and Postorder Traversal.</p>",
+            "promptType": "List"
+        },
 
-while curr:
-    if curr in visited: return curr
-    visited[curr] = True
-    curr = curr.next
-return None
-            </div></pre>`,
+        {
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Traversal",
+            "topic": "Depth First Search",
+            "prompt": "<p>What is the Inorder Traversal for a Binary Search Tree?</p>",
+            "answer": `<pre><div class="code">
+def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+    stack = []
+    result = []
+    current = root
+    while current or stack:
+        while current:
+            stack.append(current)
+            current = current.left
+        current = stack.pop()
+        result.append(current.val)
+        current = current.right
+        
+    return result
+    </div></pre>`,
+        "promptType": "Code"
+    },
+    {
+        "certificate": "Data Structures",
+        "section": "Binary Search Trees",
+        "module": "Traversal",
+        "topic": "Depth First Search",
+        "prompt": "<p>Write pseudo for preorder Traveral of a BST.</p>",
+        "answer": `<pre><div class="code">
+def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+    stack = [root]
+    result = []
+    while stack:
+        current = stack.pop()
+        if current:
+            result.append(current.val)
+            stack.append(current.right)
+            stack.append(current.left)
+    
+    return result
+        </div></pre>`,
+        "promptType": "Code"
+    },
+
+    {
+        "certificate": "Data Structures",
+        "section": "Binary Search Trees",
+        "module": "Traversal",
+        "topic": "Depth First Search",
+        "prompt": "<p>Write pseudo for postorder Traveral of a BST.</p>",
+        "answer": `<pre><div class="code">
+def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+    stack = []
+    result = []
+    current = root
+    while current or stack:
+        while current:
+            if current.right:
+                stack.append(current.right)
+            stack.append(current)
+            current = current.left
+        
+        current = stack.pop()
+        if current.right and stack and current.right == stack[-1]:
+            stack.pop()
+            stack.append(current)
+            current = current.right
+        else:
+            result.append(current.val)
+            current = None
+        
+    return result
+        </div></pre>`,
+        "promptType": "Code"
+        },
+
+        {
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Traversal",
+            "topic": "Depth First Search",
+            "prompt": "<p>What is the time complexity of the Inorder, Preorder, and Postorder Traversals for Binary Search Trees?</p>",
+            "answer": "<p>The time complexity of all three Depth-First Traversals is O(n), where n is the number of nodes in the Binary Search Tree.</p>",
             "promptType": "Define"
-        }
+        },
+
+        {
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Traversal",
+            "topic": "Breadth First Search",
+            "prompt": "<p>What is Breadth-First Traversal for a Binary Search Tree?</p>",
+            "answer": `<p>Breadth-First Traversal for a Binary Search Tree is a level-order traversal. It visits all the nodes of the Binary Search Tree level by level. It uses a queue to store the nodes.</p>`,
+            "promptType": "Define"
+        },
+    
+        {
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Traversal",
+            "topic": "Breadth First Search",
+            "prompt": "<p>What is the Breadth-First Traversal code for a Binary Search Tree?</p>",
+            "answer": `<pre><div class="code">
+def bfsTraversal(self, root: Optional[TreeNode]) -> List[int]:
+    if not root:
+    return []
+    queue = [root]
+    result = []
+    while queue:
+        size = len(queue)
+        level = []
+        for i in range(size):
+            current = queue.pop(0)
+            level.append(current.val)
+            if current.left:
+                queue.append(current.left)
+            if current.right:
+                queue.append(current.right)
+        result.append(level)
+        
+    return result
+        </div></pre>`,
+        "promptType": "Code"
+        },
+        {
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Traversal",
+            "topic": "Breadth First Search",
+            "prompt": "<p>What is the time complexity of Breadth-First Traversal for a Binary Search Tree?</p>",
+            "answer": "<p>The time complexity of Breadth-First Traversal for a Binary Search Tree is O(n), where n is the number of nodes in the Binary Search Tree.</p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Traversal",
+            "topic": "Applications",
+            "prompt": "<p>What are some applications of Depth-First Search (DFS) and Breadth-First Search (BFS) for Binary Search Trees?</p>",
+            "answer": "<p>DFS can be useful for finding the path between two nodes in the tree, checking if the tree contains a certain value, or calculating the size of the tree. BFS can be useful for finding the shortest path between two nodes in the tree or determining the minimum depth of the tree.</p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Insertion",
+            "topic": "Algorithm",
+            "prompt": "<p>Explain the algorithm for inserting a node in a Binary Search Tree?</p>",
+            "answer": "<p>If the tree is empty, create a new node as the root; otherwise, traverse the tree from the root to a leaf node based on the node's value. If the node's value is less than the current node, traverse to the left child; otherwise, traverse to the right child. Once the traversal reaches a leaf node, insert the new node as the child of the leaf node based on the value comparison.</p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Insertion",
+            "topic": "Pseudocode",
+            "prompt": "<p>What is the code for inserting a node in a Binary Search Tree?</p>",
+            "answer": `<pre><div class="code">
+def insertNode(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
+    if not root:
+        return TreeNode(val)
+    if val < root.val:
+        root.left = self.insertNode(root.left, val)
+    elif val > root.val:
+        root.right = self.insertNode(root.right, val)
+
+    return root
+            </div></pre>`,
+            "promptType": "Code"
+        },
+
+        // {
+        //     "certificate": "Data Structures",
+        //     "section": "Binary Search Trees",
+        //     "module": "Deletion",
+        //     "topic": "Algorithm",
+        //     "prompt": "<p>Explain the algorithm for deleting a node in a Binary Search Tree?</p>",
+        //     "answer": "<p>If the node to delete has no children, simply remove it; if it has one child, replace it with the child; if it has two children, find the inorder successor of the node to delete, replace it with the successor, and delete the successor.</p>",
+        //     "promptType": "Define"
+        // },
+
+        {
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Search",
+            "topic": "Algorithm",
+            "prompt": "<p>Explain the algorithm for searching a node in a Binary Search Tree?</p>",
+            "answer": "<p>Traverse the tree from the root to a leaf node based on the node's value. If the node's value is less than the current node, traverse to the left child; otherwise, traverse to the right child. If the traversal reaches a leaf node without finding the node with the target value, the node does not exist in the tree.</p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Search",
+            "topic": "Pseudocode",
+            "prompt": "<p>What is the code for searching a node in a Binary Search Tree?</p>",
+            "answer": `<pre><div class="code">
+def searchNode(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
+    if not root or root.val == val:
+        return root
+    if val < root.val:
+        return self.searchNode(root.left, val)
+    else:
+        return self.searchNode(root.right, val)
+        </div></pre>`,
+        "promptType": "Code"
+        },
+        {
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Min and Max",
+            "topic": "Finding the Minimum",
+            "prompt": "<p>Explain the algorithm for finding the minimum value in a Binary Search Tree?</p>",
+            "answer": "<p>Traverse the tree to the left starting from the root node until there are no more left children.</p>",
+            "promptType": "Define"
+        },
+        {
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Min and Max",
+            "topic": "Finding the Maximum",
+            "prompt": "<p>Explain the algorithm for finding the maximum value in a Binary Search Tree?</p>",
+            "answer": "<p>Traverse the tree to the right starting from the root node until there are no more right children.</p>",
+            "promptType": "Define"
+        },
+
+        {
+            "certificate": "Data Structures",
+            "section": "Binary Search Trees",
+            "module": "Min and Max",
+            "topic": "Finding the Minimum",
+            "prompt": "<p>What is the code for finding the minimum value in a Binary Search Tree?</p>",
+            "answer": `<pre><div class="code">
+def findMin(self, root: Optional[TreeNode]) -> int:
+    if not root:
+        return float('inf')
+    if not root.left:
+        return root.val
+
+    return self.findMin(root.left)
+        </div></pre>`,
+        "promptType": "Code"
+    },
+    {
+        "certificate": "Data Structures",
+        "section": "Binary Search Trees",
+        "module": "Min and Max",
+        "topic": "Finding the Maximum",
+        "prompt": "<p>What is the code for finding the maximum value in a Binary Search Tree?</p>",
+        "answer": `<pre><div class="code">
+def findMax(self, root: Optional[TreeNode]) -> int:
+    if not root:
+        return float('-inf')
+    if not root.right:
+        return root.val
+
+    return self.findMax(root.right)
+        </div></pre>`,
+        "promptType": "Code"
+    }
     ];
 
 export default flashcards;

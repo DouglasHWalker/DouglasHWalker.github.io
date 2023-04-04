@@ -32,9 +32,9 @@ const HomePage = () => {
             {/* A series of flipping taglines which describe all the things I do. */}
             {/* </div> */}
                 <div style={{fontSize: '1rem', padding: '0 100px'}}>
-                    <p className='intro'>Douglas Hudson Walker is an Australian Software Engineer. He earned his <span style={{ color: "var(--accent-color)" }}>Bachelor of Software Engineering (Honours)</span> cross-institutionally from the University of South Australia and the <span style={{ color: "var(--accent-color)" }}>University of Melbourne.</span></p>
-                    <p className='intro'>He is currently an <span style={{ color: "var(--accent-color)" }}>application developer</span> at DXC Technology, and a <span style={{ color: "var(--accent-color)" }}>research assistant</span> at the Research Center for Interactive Virtual Environments. </p>
-                    <p className='intro'>He has <span style={{ color: "var(--accent-color)" }}>full-stack experience</span> in every stage of the SDLC, designing, building, and deploying production ready applications in <span style={{ color: "var(--accent-color)" }}>cross-functional teams</span>. He has helped to optimise humanitarian crisis response, decipher news veracity, and individualise online education.</p>
+                    <p className='intro'>Douglas Hudson Walker is an Australian Software Engineer. He earned his <span style={{ color: "var(--accent-color)" }}>Bachelor of Software Engineering (Honours)</span> cross-institutionally from the University of South Australia and the University of Melbourne.</p>
+                    <p className='intro'>He is currently an <span style={{ color: "var(--accent-color)" }}>application developer</span> at DXC Technology, and a <span style={{ color: "var(--accent-color)" }}>research developer</span> at the Research Center for Interactive Virtual Environments. </p>
+                    <p className='intro'>He has <span style={{ color: "var(--accent-color)" }}>full-stack experience</span> in every stage of the SDLC: designing, building, and deploying production ready applications in <span style={{ color: "var(--accent-color)" }}>cross-functional teams</span>. He has helped to optimise humanitarian crisis response, decipher news veracity, and individualise online education.</p>
                 </div>
             {/* <Link className='call-to-action-link' to="/about">See my Work!</Link> */}
             {/* <div className="down-arrow"><p></p></div> */}
