@@ -49,7 +49,7 @@ const experiences = [
     {
         id: 2,
         tabTitle: 'ARC-IVE',
-        title: 'Developer, Research Assistant',
+        title: 'Research Developer',
         company: 'Research Center for Interactive Virtual Environements',
         date: '2021 - present',
         content: [
