@@ -20,10 +20,10 @@ const ProjectPage = (props) => {
         <>
             <h2 style={{ width: '100%' }}>
                 <span className='highlight' style={{ fontSize: '3rem' }}>Portfolio</span> <br />
-                DXC Technology Pty Ltd<br />
+                DXC Technology Pty Ltd<br /><span style={{ fontSize: '1.2rem', fontWeight: 'normal' }}>Last Updated: Dec 2022</span>
             </h2>
             <div>
-                <p>
+                {/* <p>
                     During my time at DXC Technology, I gained invaluable experience as a full-stack developer, utilizing an array of technologies such as C#, .NET Framework, MS SQL, JavaScript, HTML, CSS, Bootstrap,
                     and several JavaScript libraries. Not only did I enhance these software engineering skills, I was to apply them in real-world projects, recieving positive feedback for my proactive approach,
                     problem-solving, initiative, high-quality work, and for going above and beyond my expectations and responsibilities.
@@ -38,59 +38,59 @@ const ProjectPage = (props) => {
                     I am proud to showcase my portfolio of work and am honored to have had the opportunity to work with such a talented team and grateful for the valuable experience I gained.
                 </p>
                 <p>
-                    {/* <br/>
+                     <br/>
                     NOTE: You are using the pdf version of this portfolio. The web version will allow you to view the animated versions of each image.  It is available here:
                     <a href='https://douglashwalker.github.io' className='accent' style={{ marginLeft: '8px' }}>douglashwalker@github.io</a>
-                    <br /> */}
+                    <br />
                     <br />
                     NOTE: If you find the images are too small please right click the image and open it in a new tab.
                 
-                </p>
+                </p> */}
             </div>
-            <h2 className='highlight' style={{ marginLeft: '25%', fontSize: '1.5rem', textAlign: 'center', marginBottom: '0px' }}>Jun - Sep 2022</h2>
-            <div style={{ width: '100%', justifyContent: 'center', display: 'flex', marginTop: '8px' }}>
-                <table style={{ width: '50%', minWidth: '300px' }}>
-                    <tbody>
-                    <tr>
-                        <th>Total Items Closed</th>
-                        <td>{projects.length + 23}</td>
-                    </tr>
-                    <tr>
-                        <th>GitHub Contributions</th>
-                        <td>262</td>
-                    </tr>
-                    <tr>
-                        <th>Lines Added</th>
-                        <td>10,696</td>
-                    </tr>
-                    <tr>
-                        <th>Lines Deleted</th>
-                        <td>7,103</td>
-                    </tr>
-                    <tr>
-                        <th>Daily LoC</th>
-                        <td>{Math.round((10696 + 7103) / Math.round(((Math.max(...projects.map(p => new Date(p.dateClosed))) - Math.min(...projects.map(p => new Date(p.dateClosed)))) / (1000 * 60 * 60 * 24)) * 0.7142857))}</td>
-                    </tr>
-                    <tr>
-                        <th>Avg. LoC for Junior</th>
-                        <td>{100}</td>
-                    </tr>
-                    <tr>
-                        <th>Enhancements</th>
-                        <td>{projects.filter(p => p.labels.some((e) => e == "Enhancement")).length}</td>
-                    </tr>
-                    <tr>
-                        <th>Bugs</th>
-                        <td>{projects.filter(p => p.labels.some((e) => e == "Bug")).length + 23}</td>
-                    </tr>
-                    <tr>
-                        <th>Value Points</th>
-                        <td>{projects.reduce((acc, p) => acc + p.valuePoints, 0)}</td>
+                {/* <h2 className='highlight' style={{ marginLeft: '25%', fontSize: '1.5rem', textAlign: 'center', marginBottom: '0px' }}>Jun - Sep 2022</h2>
+                <div style={{ width: '100%', justifyContent: 'center', display: 'flex', marginTop: '8px' }}>
+                    <table style={{ width: '50%', minWidth: '300px' }}>
+                        <tbody>
+                        <tr>
+                            <th>Total Items Closed</th>
+                            <td>{projects.length + 23}</td>
                         </tr>
-                        </tbody>
-                </table>
-                {/* <p>Total days in team: {Math.round((Math.max(...projects.map(p => new Date(p.dateClosed))) - Math.min(...projects.map(p => new Date(p.dateClosed)))) / (1000 * 60 * 60 * 24))}</p><br/> */}
-            </div>
+                        <tr>
+                            <th>GitHub Contributions</th>
+                            <td>262</td>
+                        </tr>
+                        <tr>
+                            <th>Lines Added</th>
+                            <td>10,696</td>
+                        </tr>
+                        <tr>
+                            <th>Lines Deleted</th>
+                            <td>7,103</td>
+                        </tr>
+                        <tr>
+                            <th>Daily LoC</th>
+                            <td>{Math.round((10696 + 7103) / Math.round(((Math.max(...projects.map(p => new Date(p.dateClosed))) - Math.min(...projects.map(p => new Date(p.dateClosed)))) / (1000 * 60 * 60 * 24)) * 0.7142857))}</td>
+                        </tr>
+                        <tr>
+                            <th>Avg. LoC for Junior</th>
+                            <td>{100}</td>
+                        </tr>
+                        <tr>
+                            <th>Enhancements</th>
+                            <td>{projects.filter(p => p.labels.some((e) => e == "Enhancement")).length}</td>
+                        </tr>
+                        <tr>
+                            <th>Bugs</th>
+                            <td>{projects.filter(p => p.labels.some((e) => e == "Bug")).length + 23}</td>
+                        </tr>
+                        <tr>
+                            <th>Value Points</th>
+                            <td>{projects.reduce((acc, p) => acc + p.valuePoints, 0)}</td>
+                            </tr>
+                            </tbody>
+                    </table> */}
+                    {/* <p>Total days in team: {Math.round((Math.max(...projects.map(p => new Date(p.dateClosed))) - Math.min(...projects.map(p => new Date(p.dateClosed)))) / (1000 * 60 * 60 * 24))}</p><br/> */}
+                {/* </div> */}
             {/* <h2 style={{ width: '100%', fontSize: '1.5rem', marginBottom: '0' }}>
                 <span className='highlight' style={{ fontSize: '1.5rem', textAlign: 'center' }}>Development Work</span> 
             </h2> */}

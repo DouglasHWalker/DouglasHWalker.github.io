@@ -2218,3 +2218,195 @@ def findMax(self, root: Optional[TreeNode]) -> int:
     ];
 
 export default flashcards;
+
+
+// `
+// Distributed Architecture
+// - Issues
+//     - Communication is not reliable (networks)
+//         - Multiple messages could go through, only one could go through, too slow
+//         - Communication takes time (latency)
+//         - Networks have only a certain capacity - Bandwidth (usually shared) - network is a bottleneck
+//         - Security - We cannot trust the network we are using to communicate across
+//         - The network we are using will change overtime (its out of our control) known as topology changes
+//         - Networks are HEterogeneous (networks can change and are different)
+//         - Networks require many administraators (their changes may now affect our application)
+//         - Cost of a network is not free, cloud costs money (we may need to optimise therefore)
+//     - Transactions 
+//         - ACID databases DONT work - coordination is required Transactions
+//         - ver difficult to get right
+//         - have implications on compoennt granularity - we need to design the db with less transations and therefore componenets
+//     - Logging - how to capture reliably - clocks in different places
+//     - Managing versioning - we need to upgrade graduarly - component by comonent - maintenance
+// - CAP Theorem - 2010
+//     - Availability - 
+//     - Consistency - Is the data consistent across nodes - do we need to wait until consistency is restored
+//     - Partition Tolerance - how does the system react to failure
+//     - The network is uncontrollable - so we can only choose to oiptimise availability or consistency
+//         - a bank may be concerned with consistency
+//         - whereas a search engine would be more concerned with availability
+
+// Service Based
+//     - Scope of a component is usually larger than say the granularity in a event based architecture
+//     1. What are the services - i
+//     2. what are the components
+//     3. String the services together to realise the application
+//     - Usually uses an interface using JSOn for example
+//     - Service based usually only has one database shared by the services
+//     - Orchestration method: A user interface which is shared by all the services
+
+//     Advantages
+//     - Implementation of services without affecting the rest of the system providede the api of the service does not change
+//     - Early 2000s popular - SAP, Oracle, etc
+//     - We can have a mix of third party and custom
+
+//     Disadvantages
+//     - Simgle database can be come overburdend over time
+//     - Granulairty - usually large (not clearly seperating the function) - difficult to change
+//     - Scope creep is common
+
+//     Service Specifici UI/DB Topology
+//     - We can have seperate user interfaces for different services
+//     - or we could have different databases if they are seperate (but single user interface)
+
+//     API GAteway
+//     - Can be used to expose our app to third parties
+//     - Can deal with logging, exception hadnlindg, security, encryptiong, etc
+
+//     Database partitioning
+//     - Usually we use a single database which causes issues with change
+//     - Instead we can partition the db using schemas to resovle some of those change issues
+
+//     Characteristics
+//     - Partitioning Type: Domain
+//     - Number of Quanta: 1 to many
+//     - Deployability: 4
+//     - Elasticity: 2
+//     - Evolutionary: 3
+//     - Fault Tolerance: 4
+//     - Modularity: 4
+//     - Overall Cost: 4
+//     - Performance: 3
+//     - Reliability: 4
+//     - Scalability: 3
+//     - Simplicity: 3
+//     - Testability: 4
+
+//     Coreography versus Orchestration (Mediator)
+
+// Event Based
+
+//     Request based Application model
+//     A request is submitted, the orchestrator descides which processor is required the request is processed and returned to the requestor
+//     This is synchronous
+//     - Ochestrator <-> 
+//     - Request Processor <-> 
+//     - Database <->
+
+//     Event Driven Topoology (Publish/Subscribe)
+//     - Initiating Event -> Event Channel -> Event Processor -> Publish
+//     - Event Channel is a queue of events
+    
+//     - Broker
+//         - No central event mediator
+//         - Publish Subscribe - pipline (broadcast event)
+//         - You broadcast an event and then anyone interested picks it up
+//         - Simple, lightweight, Scalable - but lots of things can go wrong
+//         - It is typical for processors to publish all events even if they are not used (things change)
+//         - An exampole: Online store
+    
+//         Advantages:
+//         - Highly decoupled event processorts
+//         - Scalable, responsive, performant, fault tolerant
+
+//         Disadvantages
+//         - Workflow control difficult (difficult to implement)
+//         - Error handling difficult
+//         - Recoverability (transactions) difficult
+//         - Data inconsistnecy possible
+//         - Restarting is difficult - no one is responsible for starting a workflow...
+
+//     - Mediator
+//         - Initiating Event -> Event Queue -> Mediator -> Event Queue -> Event processors
+//         - The mediator delegates the events to the processors
+//         - Each event processor each have their own event channel
+//         - the mediator is informed if the event was successful or not
+//         - Place order -> Process -> Fulfill -> Ship -> notify
+//         - The mediator is aware of the flow above -> some events can be processed concurrently
+//         - If somethign goes wrong the mediator knows and can halt or pause the workflow until resolution
+//         - Events published by the mediator have not happened (Order placed), instead need to happen (Place Order) - Any command that is send must be processed
+
+//         Advantages (compared to broker)
+//         - Workflow control
+//         - Error handling
+//         - Recoverability
+//         - Better data consistency
+
+//         Dsiadvantages(compared to broker)
+//         - Coupling between event processors
+//         - Lower scalability
+//         - Lower performance
+//         - Lower fault tolerance
+//         - Complex workflows difficult to model
+
+//         Performance and scalabilty - Broker
+//         Workflow error handling - Mediator
+//         Hybrid is possible using asnchronous comms
+
+//     Unique ability for event drive to react concurrently and therefore be more responsive
+    
+//     Error handling is diffocult - if the event consumer fails the event producer must know how to hanle
+//     - This can be solved using a workflow processor to handle failures (sending failed event from consumer ot workflow processor)
+    
+//     There si always the possibility of data loss - message never makes it to the queue eg
+//     - This can be resolved by manking slight perfoemance penalty
+//     1. Using synchronous send
+//     2. Client Acknowledgement message on success
+//     3. Failed datbase rights - Again acknoledgement message
+
+//     Correlation
+//     - We need a mechanism to trakc events and how they are related to there requests and responses
+//     - we doe this my using id on the events and repsonses (simulating synchrouns comms)
+//     - We can alos braodcast messages to many event processors (decoupling and scalability of the system)
+
+//     Compared to Request Based
+//     - Better response to dynamic user content
+//     - Better scalability and elasticty
+//     - Better change and agilty managemrn
+//     - Better adaptabliity and extensibiulity
+//     - Better repsonsiveness and performance
+//     - Better eeal time descion making
+//     - better situaltional awareness
+
+//     - only supports eventual conssitency 
+//     - less control over processing flow
+//     - less certainty over outcome
+//     - Difficult to test and debug
+
+//     Characterisitics
+//     - Partitioning: technical
+//     - Number of quanta: 1 to many
+//     - Deployability 3
+//     - Elasticity: 3
+//     - Evolutionary: 5
+//     - Fault tolerance: 5
+//     - Modularity: 4
+//     - OVerall COst: 3
+//     - Performance: 5
+//     - Reliability: 3
+//     - Scalability: 5
+//     - Simplicty: 1
+//     - Testability: 2
+
+// Distirbution: highly availability
+// More difficult to build and maintain
+
+// Week 7 - Distributed Part 2
+
+//     Space Based
+
+//     Service Orchestration
+
+//     Microservices
+
+// `

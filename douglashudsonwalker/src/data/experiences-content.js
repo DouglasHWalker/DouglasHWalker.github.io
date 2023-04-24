@@ -2,15 +2,14 @@ const experiences = [
     {
         id: 1,
         tabTitle: 'DXC Technology',
-        title: 'Senior Assistant Application Developer',
+        title: 'Associate Application Developer',
         company: 'DXC Technology',
-        date: 'June 2022 - December 12th 2022',
+        date: 'June 2022 - Present',
         content: [
-            'Specifically selected from large cohort to work full-time as an software engineer/programmer with the largest consulting firm in Australia.',
-            'Key contributor in automation delivery team, building platforms for Fortune 500 clients to identify automation opportunities and optimise work processes.',
-            'Responsible for the design and implementation of an automation assignment engine for clients based on their deployed technologies and capabilities.',
-            'Involved in the development and design of agile tools and workflows to increase team productivity.',
-            'Serial bug squasher, closing a significant number of issues above and beyond expectation',
+            'C# .NET Core, SQL, JavaScript full-stack end-to-end development, including architectural planning on an internal SAAS product, centralising a global businesses collective effort to support End-To-End IT Services for thousands of businesses across the world.',
+            'Led development of multiple features, collaborating closely with product owners, and key stakeholders in an Agile environment, ensuring timely delivery of high-quality software',
+            'Designed, implemented and migrated to cloud infrastructure using Microsoft Azure to host a multi-tenant web application optimised for scalability, security, and return on investment.',
+            'Designed and implemented continuous integration and delivery (CI/CD) pipeline using Jenkins, Docker, & GitHub to automate deployment and release of software updates.',
         ],
         tech: [
             'Javascript',
@@ -51,12 +50,12 @@ const experiences = [
         tabTitle: 'ARC-IVE',
         title: 'Research Developer',
         company: 'Research Center for Interactive Virtual Environements',
-        date: '2021 - present',
+        date: '2020 - 2022',
         content: [
-            'Built agent capable of optimising strategies to maximise lives saved in simulation. Novel visualisation utilised D3 and TypeScript to generate actor-entity timelines. User-studies found the visualisation improved sense making for difficult questions by over 60%.',
-            'Collaborated with users and stakeholders from the Defence Science and Technology Group, gathering requirements and design specifications. <a href="https://www.dst.defence.gov.au." >https://www.dst.defence.gov.au.</a>',
-            'Performed extensive literature reviews of state-of-the-art artificial intelligence techniques and implemented demonstrations for use in augmented reality headsets.',
-            'Performed large user-studies and collated results for use in research publications.'
+            'Developed RL agents in Python, SciKit, and Gym that optimised lives saved during humanitarian crisis response competitive with professional human strategy.',
+            'Built novel visualisations in React, TypeScript, and D3 that improved sense making of key metrics and questions in crisis response by over 60% in user studies.',
+            'Performed user studies, and extensive literature reviews of state-of-the-art natural language processing techniques. Implemented C# demonstrations in AR headsets.',
+            'Collaborated with key stakeholders, researchers and product designers from the Defence Science and Technology Group. https://www.dst.defence.gov.au.'
         ],
         tech: [
             'TypeScript',
@@ -70,13 +69,13 @@ const experiences = [
     {
         id: 3,
         tabTitle: '3A',
-        title: 'Principal Developer',
+        title: 'Graduate Mobile Developer',
         company: 'Adelaide Advanced Applications (3A)',
         date: '2018 - 2019',
         content: [
-            'Developed custom education management system for post-graduates specialising in oculoplastic surgery. Warning Graphic: <a href="oculoplastic.eyesurgeryvideos.net." >oculoplastic.eyesurgeryvideos.net.</a>',
-            'Full-stack development of cross-platform CMS. Primary roles in product design, prototyping, architecture, Azure cloud solutions, and bespoke specialty media player',
-            'Provided leadership for development team, delegating tasks based on strengths, team planning and fostering client relationship.',
+            'Full-stack CMS: Android, iOS, & Web. Key contributions across system design and architecture, UX and prototyping, Azure cloud, and technical/development leadership.',
+            'Custom education management system for post-graduates specialising in oculoplastic surgery. Warning Graphic: oculoplastic.eyesurgeryvideos.net',
+            'Provided technical leadership, designing and delegating development items based on team strengths. Major role in project planning and client relationship management.',
         ],
         tech: [
             'C#',
@@ -94,7 +93,7 @@ const experiences = [
     {
         id: 4,
         tabTitle: 'Hanni Australia',
-        title: 'Manager, Sales, Construction',
+        title: 'Retail Manager, Sales',
         company: 'Hanni Australia',
         date: '2012 - 2018',
         content: [
@@ -110,9 +109,9 @@ const experiences = [
         date: '2020 - 2023',
         content: [
             'Majored in Artificial Intelligence, Security, and Distributed systems (Concurrency)',
-            "Top 5% of cohort (Every Year) - Chancellor's Letters of Commendation List",
+            "Top 5% of cohort (Each Year) - Chancellor's Letters of Commendation List",
             "Studied final year courses (post-graduate) at The University of Melbourne - Highest ranked in Australia for Computer Science",
-            "Cumulative GPA: 6.9/7.0 - lost marks in Artificial Intelligence (my favourite subject) "
+            "Cumulative GPA: 6.9/7.0 - Interestingly, the marks I lost were in the topics I was most interested in. AI and Advanced CS Theory"
         ],
         tech: ['Human Computer Interaction', 'Data Structures', 'Software Design', 'C++', 'Design Patterns', 'CI/CD', 'Networking', 'Machine Learning', 'Reinforcement Learning', 'Natural Language Processing',
             'Discrete Mathematics', 'Calculus', 'CIA Triad', 'Encryption', 'Red vs. Blue', 'Enterprise Databases', 'Cloud', 'Big Data', 'Data Wrangling', 'Data Science',
